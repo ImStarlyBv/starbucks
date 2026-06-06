@@ -20,8 +20,14 @@
 <a href="{{ rel }}drink/{{ d.slug }}/"
    class="glass-card rounded-xl overflow-hidden group lift block focus:outline-none focus:ring-2 focus:ring-primary"
    data-name="{{ d.name|lower }}" data-cat="{{ d.category }}" data-cal="{{ b.calories }}" data-new="{{ 1 if d.is_new else 0 }}">
-  <div class="relative h-40 overflow-hidden">
+  <div class="relative h-40 overflow-hidden bg-surface-container-low">
+    {% if d.image %}
+    <img src="{{ rel }}{{ d.image }}" alt="{{ d.name }} — Starbucks {{ d.category_label }}"
+         width="600" height="600" loading="lazy" decoding="async"
+         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+    {% else %}
     {{ tile(d.category, 'w-full h-full') }}
+    {% endif %}
     <span class="absolute top-3 right-3 bg-white/95 text-primary-container px-3 py-1 rounded-full font-label-md text-label-md shadow-sm">{{ b.calories }} kcal</span>
     {% if d.is_new %}<span class="absolute top-3 left-3 bg-tertiary text-white px-2 py-1 rounded-full text-caption font-semibold">New</span>{% endif %}
   </div>

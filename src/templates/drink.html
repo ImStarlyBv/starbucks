@@ -15,7 +15,8 @@
       "description": "{{ page.description }}",
       "isPartOf": { "@id": "{{ site.url }}/#website" },
       "dateModified": "{{ build_date }}",
-      "author": { "@id": "{{ site.url }}/#author" }
+      "author": { "@id": "{{ site.url }}/#author" }{% if d.image %},
+      "primaryImageOfPage": { "@type": "ImageObject", "url": "{{ site.url }}/{{ d.image }}", "width": 600, "height": 600 }{% endif %}
     },
     {
       "@type": "BreadcrumbList",
@@ -30,6 +31,7 @@
       "name": {{ d.name | tojson }},
       "description": {{ d.desc | tojson }},
       "url": "{{ page.canonical }}",
+      {% if d.image %}"image": "{{ site.url }}/{{ d.image }}",{% endif %}
       "nutrition": {
         "@type": "NutritionInformation",
         "servingSize": {{ d.default_size | tojson }},
@@ -63,8 +65,14 @@
   <div class="flex flex-col lg:flex-row gap-12 items-start">
     <!-- Left: visual + live highlights -->
     <div class="w-full lg:w-1/2 lg:sticky lg:top-24">
-      <div class="relative aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden">
+      <div class="relative aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden bg-surface-container-low">
+        {% if d.image %}
+        <img src="{{ rel }}{{ d.image }}" alt="{{ d.image_alt }}"
+             width="600" height="600" fetchpriority="high" decoding="async"
+             class="absolute inset-0 w-full h-full object-cover">
+        {% else %}
         {{ ui.tile(d.category, 'w-full h-full') }}
+        {% endif %}
         <div class="absolute bottom-6 left-6 right-6 flex justify-between gap-4">
           <div class="glass-card px-5 py-3 rounded-2xl">
             <p class="font-caption text-caption text-secondary uppercase tracking-wider">Caffeine</p>

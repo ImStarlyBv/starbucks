@@ -1,0 +1,3451 @@
+{
+  "Iced Horchata Shaken Espresso": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "100",
+        "cal_from_fat": "30",
+        "fat": "3.5 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "45 mg",
+        "carbs": "17 g",
+        "fiber": "1 g",
+        "sugar": "8 g",
+        "protein": "1 g",
+        "caffeine": "170 mg",
+        "total": 100
+      },
+      "Grande(16 fl oz)": {
+        "calories": "150",
+        "cal_from_fat": "40",
+        "fat": "4.5 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "60 mg",
+        "carbs": "28 g",
+        "fiber": "1 g",
+        "sugar": "16 g",
+        "protein": "2 g",
+        "caffeine": "255 mg",
+        "total": 150
+      },
+      "Venti(20 fl oz)": {
+        "calories": "220",
+        "cal_from_fat": "50",
+        "fat": "6 g",
+        "sat_fat": "0.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "85 mg",
+        "carbs": "40 g",
+        "fiber": "2 g",
+        "sugar": "23 g",
+        "protein": "3 g",
+        "caffeine": "340 mg",
+        "total": 220
+      }
+    },
+    "defaults": {}
+  },
+  "Horchata Frappuccino® Blended Beverage": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "270",
+        "cal_from_fat": "96",
+        "fat": "11 g",
+        "sat_fat": "7 g",
+        "trans_fat": "0 g",
+        "cholesterol": "35 mg",
+        "sodium": "150 mg",
+        "carbs": "42 g",
+        "fiber": "0 g",
+        "sugar": "41 g",
+        "protein": "3 g",
+        "caffeine": "60 mg",
+        "total": 270
+      },
+      "Grande(16 fl oz)": {
+        "calories": "400",
+        "cal_from_fat": "133",
+        "fat": "15 g",
+        "sat_fat": "9 g",
+        "trans_fat": "0 g",
+        "cholesterol": "45 mg",
+        "sodium": "220 mg",
+        "carbs": "63 g",
+        "fiber": "0 g",
+        "sugar": "61 g",
+        "protein": "4 g",
+        "caffeine": "90 mg",
+        "total": 400
+      },
+      "Venti(20 fl oz)": {
+        "calories": "470",
+        "cal_from_fat": "128",
+        "fat": "14 g",
+        "sat_fat": "9 g",
+        "trans_fat": "0 g",
+        "cholesterol": "45 mg",
+        "sodium": "290 mg",
+        "carbs": "81 g",
+        "fiber": "0 g",
+        "sugar": "80 g",
+        "protein": "5 g",
+        "caffeine": "120 mg",
+        "total": 470
+      }
+    },
+    "defaults": {}
+  },
+  "Butterfly Energy Drink": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "90",
+        "cal_from_fat": "15",
+        "fat": "1.5 g",
+        "sat_fat": "1.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "130 mg",
+        "carbs": "17 g",
+        "fiber": "0 g",
+        "sugar": "15 g",
+        "protein": "0 g",
+        "caffeine": "85 mg",
+        "total": 90
+      },
+      "Grande(16 fl oz)": {
+        "calories": "130",
+        "cal_from_fat": "20",
+        "fat": "2 g",
+        "sat_fat": "2 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "170 mg",
+        "carbs": "26 g",
+        "fiber": "0 g",
+        "sugar": "23 g",
+        "protein": "0 g",
+        "caffeine": "105 mg",
+        "total": 130
+      },
+      "Venti(20 fl oz)": {
+        "calories": "190",
+        "cal_from_fat": "30",
+        "fat": "3 g",
+        "sat_fat": "3 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "240 mg",
+        "carbs": "38 g",
+        "fiber": "0 g",
+        "sugar": "34 g",
+        "protein": "0 g",
+        "caffeine": "125 mg",
+        "total": 190
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "240",
+        "cal_from_fat": "40",
+        "fat": "4.5 g",
+        "sat_fat": "4.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "320 mg",
+        "carbs": "48 g",
+        "fiber": "0 g",
+        "sugar": "43 g",
+        "protein": "0 g",
+        "caffeine": "160 mg",
+        "total": 240
+      }
+    },
+    "defaults": {}
+  },
+  "Strawberry Açaí Lemonade Energy Refresher": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "110",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "55 mg",
+        "carbs": "27 g",
+        "fiber": "1 g",
+        "sugar": "24 g",
+        "protein": "0 g",
+        "caffeine": "100 mg",
+        "total": 110
+      },
+      "Grande(16 fl oz)": {
+        "calories": "150",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "70 mg",
+        "carbs": "35 g",
+        "fiber": "1 g",
+        "sugar": "32 g",
+        "protein": "0 g",
+        "caffeine": "125 mg",
+        "total": 150
+      },
+      "Venti(20 fl oz)": {
+        "calories": "210",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "90 mg",
+        "carbs": "51 g",
+        "fiber": "1 g",
+        "sugar": "47 g",
+        "protein": "0 g",
+        "caffeine": "150 mg",
+        "total": 210
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "290",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "105 mg",
+        "carbs": "70 g",
+        "fiber": "2 g",
+        "sugar": "64 g",
+        "protein": "1 g",
+        "caffeine": "175 mg",
+        "total": 290
+      }
+    },
+    "defaults": {}
+  },
+  "Mango Dragonfruit Lemonade Energy Refresher": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "110",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "55 mg",
+        "carbs": "27 g",
+        "fiber": "0 g",
+        "sugar": "24 g",
+        "protein": "0 g",
+        "caffeine": "100 mg",
+        "total": 110
+      },
+      "Grande(16 fl oz)": {
+        "calories": "140",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "70 mg",
+        "carbs": "34 g",
+        "fiber": "1 g",
+        "sugar": "31 g",
+        "protein": "0 g",
+        "caffeine": "125 mg",
+        "total": 140
+      },
+      "Venti(20 fl oz)": {
+        "calories": "210",
+        "cal_from_fat": "5",
+        "fat": "0.5 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "90 mg",
+        "carbs": "50 g",
+        "fiber": "1 g",
+        "sugar": "45 g",
+        "protein": "1 g",
+        "caffeine": "150 mg",
+        "total": 210
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "290",
+        "cal_from_fat": "10",
+        "fat": "1 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "105 mg",
+        "carbs": "69 g",
+        "fiber": "1 g",
+        "sugar": "62 g",
+        "protein": "1 g",
+        "caffeine": "175 mg",
+        "total": 290
+      }
+    },
+    "defaults": {}
+  },
+  "Pink Energy Drink": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "110",
+        "cal_from_fat": "20",
+        "fat": "2 g",
+        "sat_fat": "2 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "95 mg",
+        "carbs": "22 g",
+        "fiber": "1 g",
+        "sugar": "19 g",
+        "protein": "0 g",
+        "caffeine": "100 mg",
+        "total": 110
+      },
+      "Grande(16 fl oz)": {
+        "calories": "140",
+        "cal_from_fat": "25",
+        "fat": "2.5 g",
+        "sat_fat": "2.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "120 mg",
+        "carbs": "28 g",
+        "fiber": "1 g",
+        "sugar": "25 g",
+        "protein": "0 g",
+        "caffeine": "125 mg",
+        "total": 140
+      },
+      "Venti(20 fl oz)": {
+        "calories": "200",
+        "cal_from_fat": "35",
+        "fat": "4 g",
+        "sat_fat": "3.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "160 mg",
+        "carbs": "40 g",
+        "fiber": "1 g",
+        "sugar": "36 g",
+        "protein": "1 g",
+        "caffeine": "150 mg",
+        "total": 200
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "280",
+        "cal_from_fat": "50",
+        "fat": "5 g",
+        "sat_fat": "5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "210 mg",
+        "carbs": "56 g",
+        "fiber": "2 g",
+        "sugar": "50 g",
+        "protein": "1 g",
+        "caffeine": "175 mg",
+        "total": 280
+      }
+    },
+    "defaults": {}
+  },
+  "Dragon Energy Drink": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "110",
+        "cal_from_fat": "20",
+        "fat": "2.5 g",
+        "sat_fat": "2 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "95 mg",
+        "carbs": "22 g",
+        "fiber": "0 g",
+        "sugar": "19 g",
+        "protein": "1 g",
+        "caffeine": "100 mg",
+        "total": 110
+      },
+      "Grande(16 fl oz)": {
+        "calories": "140",
+        "cal_from_fat": "25",
+        "fat": "3 g",
+        "sat_fat": "2.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "120 mg",
+        "carbs": "27 g",
+        "fiber": "1 g",
+        "sugar": "24 g",
+        "protein": "1 g",
+        "caffeine": "125 mg",
+        "total": 140
+      },
+      "Venti(20 fl oz)": {
+        "calories": "200",
+        "cal_from_fat": "40",
+        "fat": "4.5 g",
+        "sat_fat": "3.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "160 mg",
+        "carbs": "39 g",
+        "fiber": "1 g",
+        "sugar": "35 g",
+        "protein": "1 g",
+        "caffeine": "150 mg",
+        "total": 200
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "280",
+        "cal_from_fat": "50",
+        "fat": "6 g",
+        "sat_fat": "5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "210 mg",
+        "carbs": "55 g",
+        "fiber": "1 g",
+        "sugar": "48 g",
+        "protein": "1 g",
+        "caffeine": "175 mg",
+        "total": 280
+      }
+    },
+    "defaults": {}
+  },
+  "Blonde Roast - Starbucks® Sunsera": {
+    "category": "Hot",
+    "is_new": true,
+    "sizes": {
+      "Short(8 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "5 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "155 mg",
+        "total": 5
+      },
+      "Tall(12 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "235 mg",
+        "total": 5
+      },
+      "Grande(16 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "1 g",
+        "caffeine": "315 mg",
+        "total": 5
+      },
+      "Venti(20 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "1 g",
+        "caffeine": "390 mg",
+        "total": 5
+      }
+    },
+    "defaults": {}
+  },
+  "Medium Roast - Pike Place® Roast": {
+    "category": "Hot",
+    "is_new": true,
+    "sizes": {
+      "Short(8 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "5 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "155 mg",
+        "total": 5
+      },
+      "Tall(12 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "235 mg",
+        "total": 5
+      },
+      "Grande(16 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "1 g",
+        "caffeine": "315 mg",
+        "total": 5
+      },
+      "Venti(20 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "1 g",
+        "caffeine": "390 mg",
+        "total": 5
+      }
+    },
+    "defaults": {}
+  },
+  "Featured Dark Roast - Starbucks 1971 Roast™": {
+    "category": "Hot",
+    "is_new": true,
+    "sizes": {
+      "Short(8 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "5 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "155 mg",
+        "total": 5
+      },
+      "Tall(12 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "235 mg",
+        "total": 5
+      },
+      "Grande(16 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "1 g",
+        "caffeine": "315 mg",
+        "total": 5
+      },
+      "Venti(20 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "1 g",
+        "caffeine": "390 mg",
+        "total": 5
+      }
+    },
+    "defaults": {}
+  },
+  "Decaf Roast - Pike Place® Roast": {
+    "category": "Hot",
+    "is_new": true,
+    "sizes": {
+      "Short(8 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "5 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "15 mg",
+        "total": 5
+      },
+      "Tall(12 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "5 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "20 mg",
+        "total": 5
+      },
+      "Grande(16 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "1 g",
+        "caffeine": "25 mg",
+        "total": 5
+      },
+      "Venti(20 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "1 g",
+        "caffeine": "30 mg",
+        "total": 5
+      }
+    },
+    "defaults": {}
+  },
+  "Coffee Traveler – Pike Place® Roast": {
+    "category": "Hot",
+    "is_new": true,
+    "sizes": {
+      "Traveler(8 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "1 g",
+        "caffeine": "155 mg",
+        "total": 5
+      }
+    },
+    "defaults": {}
+  },
+  "Coffee Traveler – Decaf Pike Place® Roast": {
+    "category": "Hot",
+    "is_new": true,
+    "sizes": {
+      "Traveler(8 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "1 g",
+        "caffeine": "15 mg",
+        "total": 5
+      }
+    },
+    "defaults": {}
+  },
+  "Cold Brew": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "155 mg",
+        "total": 5
+      },
+      "Grande(16 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "15 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "205 mg",
+        "total": 5
+      },
+      "Venti(20 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "20 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "310 mg",
+        "total": 5
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "25 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "360 mg",
+        "total": 5
+      }
+    },
+    "defaults": {}
+  },
+  "Iced Ube Coconut Cream Shaken Espresso": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "200",
+        "cal_from_fat": "100",
+        "fat": "11 g",
+        "sat_fat": "7 g",
+        "trans_fat": "0 g",
+        "cholesterol": "35 mg",
+        "sodium": "50 mg",
+        "carbs": "22 g",
+        "fiber": "0 g",
+        "sugar": "18 g",
+        "protein": "2 g",
+        "caffeine": "170 mg",
+        "total": 200
+      },
+      "Grande(16 fl oz)": {
+        "calories": "250",
+        "cal_from_fat": "120",
+        "fat": "13 g",
+        "sat_fat": "8 g",
+        "trans_fat": "0 g",
+        "cholesterol": "40 mg",
+        "sodium": "65 mg",
+        "carbs": "30 g",
+        "fiber": "0 g",
+        "sugar": "24 g",
+        "protein": "3 g",
+        "caffeine": "255 mg",
+        "total": 250
+      },
+      "Venti(20 fl oz)": {
+        "calories": "330",
+        "cal_from_fat": "150",
+        "fat": "17 g",
+        "sat_fat": "9 g",
+        "trans_fat": "0 g",
+        "cholesterol": "45 mg",
+        "sodium": "90 mg",
+        "carbs": "41 g",
+        "fiber": "1 g",
+        "sugar": "31 g",
+        "protein": "4 g",
+        "caffeine": "340 mg",
+        "total": 330
+      }
+    },
+    "defaults": {}
+  },
+  "Matcha Crème Frappuccino® Blended Beverage": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "220",
+        "cal_from_fat": "70",
+        "fat": "8 g",
+        "sat_fat": "5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "25 mg",
+        "sodium": "160 mg",
+        "carbs": "31 g",
+        "fiber": "1 g",
+        "sugar": "31 g",
+        "protein": "4 g",
+        "caffeine": "40 mg",
+        "total": 220
+      },
+      "Grande(16 fl oz)": {
+        "calories": "320",
+        "cal_from_fat": "110",
+        "fat": "13 g",
+        "sat_fat": "8 g",
+        "trans_fat": "0 g",
+        "cholesterol": "40 mg",
+        "sodium": "230 mg",
+        "carbs": "46 g",
+        "fiber": "1 g",
+        "sugar": "45 g",
+        "protein": "5 g",
+        "caffeine": "65 mg",
+        "total": 320
+      },
+      "Venti(20 fl oz)": {
+        "calories": "440",
+        "cal_from_fat": "160",
+        "fat": "18 g",
+        "sat_fat": "11 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "55 mg",
+        "sodium": "320 mg",
+        "carbs": "62 g",
+        "fiber": "1 g",
+        "sugar": "61 g",
+        "protein": "8 g",
+        "caffeine": "85 mg",
+        "total": 440
+      }
+    },
+    "defaults": {}
+  },
+  "Emperor's Clouds & Mist® Tea": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Short(8 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "1 mg",
+        "total": 0
+      },
+      "Tall(12 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "1 mg",
+        "total": 0
+      },
+      "Grande(16 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "16 mg",
+        "total": 0
+      },
+      "Venti(20 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "16 mg",
+        "total": 0
+      }
+    },
+    "defaults": {}
+  },
+  "Mint Majesty® Tea": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Short(8 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 0
+      },
+      "Tall(12 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 0
+      },
+      "Grande(16 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 0
+      },
+      "Venti(20 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 0
+      }
+    },
+    "defaults": {}
+  },
+  "Chamomile Mint Blossom Tea": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Short(8 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "16 mg",
+        "total": 0
+      },
+      "Tall(12 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "1 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "16 mg",
+        "total": 5
+      },
+      "Grande(16 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "1 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "25 mg",
+        "total": 5
+      },
+      "Venti(20 fl oz)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "5 mg",
+        "carbs": "1 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "25 mg",
+        "total": 5
+      }
+    },
+    "defaults": {}
+  },
+  "Tropical Butterfly Lemonade Energy Refresher": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "90",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "95 mg",
+        "carbs": "21 g",
+        "fiber": "0 g",
+        "sugar": "19 g",
+        "protein": "0 g",
+        "caffeine": "85 mg",
+        "total": 90
+      },
+      "Grande(16 fl oz)": {
+        "calories": "130",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "130 mg",
+        "carbs": "32 g",
+        "fiber": "0 g",
+        "sugar": "29 g",
+        "protein": "0 g",
+        "caffeine": "105 mg",
+        "total": 130
+      },
+      "Venti(20 fl oz)": {
+        "calories": "190",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "170 mg",
+        "carbs": "47 g",
+        "fiber": "0 g",
+        "sugar": "43 g",
+        "protein": "0 g",
+        "caffeine": "125 mg",
+        "total": 190
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "250",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "230 mg",
+        "carbs": "61 g",
+        "fiber": "0 g",
+        "sugar": "56 g",
+        "protein": "0 g",
+        "caffeine": "130 mg",
+        "total": 250
+      }
+    },
+    "defaults": {}
+  },
+  "Cannon Ball Energy Drink": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "130",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "60 mg",
+        "carbs": "31 g",
+        "fiber": "1 g",
+        "sugar": "26 g",
+        "protein": "1 g",
+        "caffeine": "100 mg",
+        "total": 130
+      },
+      "Grande(16 fl oz)": {
+        "calories": "160",
+        "cal_from_fat": "5",
+        "fat": "0.5 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "75 mg",
+        "carbs": "38 g",
+        "fiber": "1 g",
+        "sugar": "34 g",
+        "protein": "1 g",
+        "caffeine": "125 mg",
+        "total": 160
+      },
+      "Venti(20 fl oz)": {
+        "calories": "220",
+        "cal_from_fat": "5",
+        "fat": "0.5 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "90 mg",
+        "carbs": "54 g",
+        "fiber": "1 g",
+        "sugar": "48 g",
+        "protein": "1 g",
+        "caffeine": "150 mg",
+        "total": 220
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "320",
+        "cal_from_fat": "10",
+        "fat": "1 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "110 mg",
+        "carbs": "76 g",
+        "fiber": "3 g",
+        "sugar": "67 g",
+        "protein": "1 g",
+        "caffeine": "175 mg",
+        "total": 320
+      }
+    },
+    "defaults": {}
+  },
+  "Pink Cannon Ball Energy Drink": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "130",
+        "cal_from_fat": "20",
+        "fat": "2.5 g",
+        "sat_fat": "2 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "95 mg",
+        "carbs": "25 g",
+        "fiber": "1 g",
+        "sugar": "21 g",
+        "protein": "1 g",
+        "caffeine": "100 mg",
+        "total": 130
+      },
+      "Grande(16 fl oz)": {
+        "calories": "160",
+        "cal_from_fat": "25",
+        "fat": "3 g",
+        "sat_fat": "2.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "125 mg",
+        "carbs": "31 g",
+        "fiber": "1 g",
+        "sugar": "27 g",
+        "protein": "1 g",
+        "caffeine": "125 mg",
+        "total": 160
+      },
+      "Venti(20 fl oz)": {
+        "calories": "220",
+        "cal_from_fat": "40",
+        "fat": "4.5 g",
+        "sat_fat": "3.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "170 mg",
+        "carbs": "43 g",
+        "fiber": "1 g",
+        "sugar": "38 g",
+        "protein": "1 g",
+        "caffeine": "150 mg",
+        "total": 220
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "310",
+        "cal_from_fat": "55",
+        "fat": "6 g",
+        "sat_fat": "5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "210 mg",
+        "carbs": "62 g",
+        "fiber": "3 g",
+        "sugar": "53 g",
+        "protein": "2 g",
+        "caffeine": "175 mg",
+        "total": 310
+      }
+    },
+    "defaults": {}
+  },
+  "Strawberry Açaí Energy Refresher": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "80",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "60 mg",
+        "carbs": "18 g",
+        "fiber": "1 g",
+        "sugar": "16 g",
+        "protein": "0 g",
+        "caffeine": "100 mg",
+        "total": 80
+      },
+      "Grande(16 fl oz)": {
+        "calories": "100",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "75 mg",
+        "carbs": "23 g",
+        "fiber": "1 g",
+        "sugar": "21 g",
+        "protein": "0 g",
+        "caffeine": "125 mg",
+        "total": 100
+      },
+      "Venti(20 fl oz)": {
+        "calories": "140",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "90 mg",
+        "carbs": "33 g",
+        "fiber": "1 g",
+        "sugar": "30 g",
+        "protein": "0 g",
+        "caffeine": "150 mg",
+        "total": 140
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "190",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "110 mg",
+        "carbs": "46 g",
+        "fiber": "2 g",
+        "sugar": "41 g",
+        "protein": "0 g",
+        "caffeine": "175 mg",
+        "total": 190
+      }
+    },
+    "defaults": {}
+  },
+  "Mango Dragonfruit Energy Refresher": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "80",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "55 mg",
+        "carbs": "18 g",
+        "fiber": "0 g",
+        "sugar": "16 g",
+        "protein": "0 g",
+        "caffeine": "100 mg",
+        "total": 80
+      },
+      "Grande(16 fl oz)": {
+        "calories": "100",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "70 mg",
+        "carbs": "22 g",
+        "fiber": "0 g",
+        "sugar": "20 g",
+        "protein": "0 g",
+        "caffeine": "125 mg",
+        "total": 100
+      },
+      "Venti(20 fl oz)": {
+        "calories": "130",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "90 mg",
+        "carbs": "32 g",
+        "fiber": "0 g",
+        "sugar": "28 g",
+        "protein": "0 g",
+        "caffeine": "150 mg",
+        "total": 130
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "190",
+        "cal_from_fat": "5",
+        "fat": "1 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "110 mg",
+        "carbs": "45 g",
+        "fiber": "1 g",
+        "sugar": "40 g",
+        "protein": "1 g",
+        "caffeine": "175 mg",
+        "total": 190
+      }
+    },
+    "defaults": {}
+  },
+  "Strawberry Açaí Lemonade Refresher": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "110",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "20 mg",
+        "carbs": "27 g",
+        "fiber": "1 g",
+        "sugar": "24 g",
+        "protein": "0 g",
+        "caffeine": "25 mg",
+        "total": 110
+      },
+      "Grande(16 fl oz)": {
+        "calories": "140",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "35 mg",
+        "carbs": "35 g",
+        "fiber": "1 g",
+        "sugar": "32 g",
+        "protein": "0 g",
+        "caffeine": "50 mg",
+        "total": 140
+      },
+      "Venti(20 fl oz)": {
+        "calories": "210",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "55 mg",
+        "carbs": "51 g",
+        "fiber": "1 g",
+        "sugar": "47 g",
+        "protein": "0 g",
+        "caffeine": "75 mg",
+        "total": 210
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "290",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "75 mg",
+        "carbs": "70 g",
+        "fiber": "2 g",
+        "sugar": "64 g",
+        "protein": "1 g",
+        "caffeine": "100 mg",
+        "total": 290
+      }
+    },
+    "defaults": {}
+  },
+  "Mango Strawberry Lemonade Refresher": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "130",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "25 mg",
+        "carbs": "31 g",
+        "fiber": "1 g",
+        "sugar": "28 g",
+        "protein": "0 g",
+        "caffeine": "25 mg",
+        "total": 130
+      },
+      "Grande(16 fl oz)": {
+        "calories": "180",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "40 mg",
+        "carbs": "42 g",
+        "fiber": "1 g",
+        "sugar": "39 g",
+        "protein": "0 g",
+        "caffeine": "50 mg",
+        "total": 180
+      },
+      "Venti(20 fl oz)": {
+        "calories": "260",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "60 mg",
+        "carbs": "62 g",
+        "fiber": "1 g",
+        "sugar": "58 g",
+        "protein": "0 g",
+        "caffeine": "75 mg",
+        "total": 260
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "360",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "80 mg",
+        "carbs": "85 g",
+        "fiber": "2 g",
+        "sugar": "79 g",
+        "protein": "1 g",
+        "caffeine": "100 mg",
+        "total": 360
+      }
+    },
+    "defaults": {}
+  },
+  "Mango Dragonfruit Lemonade Refresher": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "110",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "20 mg",
+        "carbs": "27 g",
+        "fiber": "0 g",
+        "sugar": "24 g",
+        "protein": "0 g",
+        "caffeine": "25 mg",
+        "total": 110
+      },
+      "Grande(16 fl oz)": {
+        "calories": "140",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "35 mg",
+        "carbs": "34 g",
+        "fiber": "1 g",
+        "sugar": "31 g",
+        "protein": "0 g",
+        "caffeine": "50 mg",
+        "total": 140
+      },
+      "Venti(20 fl oz)": {
+        "calories": "200",
+        "cal_from_fat": "5",
+        "fat": "0.5 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "55 mg",
+        "carbs": "50 g",
+        "fiber": "1 g",
+        "sugar": "45 g",
+        "protein": "1 g",
+        "caffeine": "75 mg",
+        "total": 200
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "290",
+        "cal_from_fat": "10",
+        "fat": "1 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "70 mg",
+        "carbs": "69 g",
+        "fiber": "1 g",
+        "sugar": "62 g",
+        "protein": "1 g",
+        "caffeine": "100 mg",
+        "total": 290
+      }
+    },
+    "defaults": {}
+  },
+  "Cannon Ball Drink": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "130",
+        "cal_from_fat": "4",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "25 mg",
+        "carbs": "30 g",
+        "fiber": "1 g",
+        "sugar": "26 g",
+        "protein": "1 g",
+        "caffeine": "25 mg",
+        "total": 130
+      },
+      "Grande(16 fl oz)": {
+        "calories": "160",
+        "cal_from_fat": "4",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "40 mg",
+        "carbs": "38 g",
+        "fiber": "1 g",
+        "sugar": "34 g",
+        "protein": "1 g",
+        "caffeine": "50 mg",
+        "total": 160
+      },
+      "Venti(20 fl oz)": {
+        "calories": "220",
+        "cal_from_fat": "5",
+        "fat": "0.5 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "55 mg",
+        "carbs": "54 g",
+        "fiber": "1 g",
+        "sugar": "48 g",
+        "protein": "1 g",
+        "caffeine": "75 mg",
+        "total": 220
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "320",
+        "cal_from_fat": "9",
+        "fat": "1 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "75 mg",
+        "carbs": "76 g",
+        "fiber": "3 g",
+        "sugar": "67 g",
+        "protein": "1 g",
+        "caffeine": "100 mg",
+        "total": 320
+      }
+    },
+    "defaults": {}
+  },
+  "Pink Drink": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "110",
+        "cal_from_fat": "20",
+        "fat": "2 g",
+        "sat_fat": "2 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "60 mg",
+        "carbs": "22 g",
+        "fiber": "1 g",
+        "sugar": "19 g",
+        "protein": "0 g",
+        "caffeine": "25 mg",
+        "total": 110
+      },
+      "Grande(16 fl oz)": {
+        "calories": "140",
+        "cal_from_fat": "25",
+        "fat": "2.5 g",
+        "sat_fat": "2.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "85 mg",
+        "carbs": "28 g",
+        "fiber": "1 g",
+        "sugar": "25 g",
+        "protein": "0 g",
+        "caffeine": "50 mg",
+        "total": 140
+      },
+      "Venti(20 fl oz)": {
+        "calories": "200",
+        "cal_from_fat": "35",
+        "fat": "4 g",
+        "sat_fat": "3.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "130 mg",
+        "carbs": "40 g",
+        "fiber": "1 g",
+        "sugar": "36 g",
+        "protein": "1 g",
+        "caffeine": "75 mg",
+        "total": 200
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "280",
+        "cal_from_fat": "50",
+        "fat": "5 g",
+        "sat_fat": "5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "170 mg",
+        "carbs": "56 g",
+        "fiber": "2 g",
+        "sugar": "50 g",
+        "protein": "1 g",
+        "caffeine": "100 mg",
+        "total": 280
+      }
+    },
+    "defaults": {}
+  },
+  "Mango Dream": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "120",
+        "cal_from_fat": "20",
+        "fat": "2 g",
+        "sat_fat": "2 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "60 mg",
+        "carbs": "26 g",
+        "fiber": "1 g",
+        "sugar": "23 g",
+        "protein": "0 g",
+        "caffeine": "25 mg",
+        "total": 120
+      },
+      "Grande(16 fl oz)": {
+        "calories": "170",
+        "cal_from_fat": "25",
+        "fat": "2.5 g",
+        "sat_fat": "2.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "90 mg",
+        "carbs": "35 g",
+        "fiber": "1 g",
+        "sugar": "32 g",
+        "protein": "0 g",
+        "caffeine": "50 mg",
+        "total": 170
+      },
+      "Venti(20 fl oz)": {
+        "calories": "250",
+        "cal_from_fat": "35",
+        "fat": "4 g",
+        "sat_fat": "3.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "135 mg",
+        "carbs": "51 g",
+        "fiber": "1 g",
+        "sugar": "48 g",
+        "protein": "1 g",
+        "caffeine": "75 mg",
+        "total": 250
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "340",
+        "cal_from_fat": "50",
+        "fat": "5 g",
+        "sat_fat": "5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "180 mg",
+        "carbs": "71 g",
+        "fiber": "2 g",
+        "sugar": "65 g",
+        "protein": "1 g",
+        "caffeine": "100 mg",
+        "total": 340
+      }
+    },
+    "defaults": {}
+  },
+  "Dragon Drink®": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "110",
+        "cal_from_fat": "20",
+        "fat": "2.5 g",
+        "sat_fat": "2 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "60 mg",
+        "carbs": "21 g",
+        "fiber": "0 g",
+        "sugar": "19 g",
+        "protein": "1 g",
+        "caffeine": "25 mg",
+        "total": 110
+      },
+      "Grande(16 fl oz)": {
+        "calories": "140",
+        "cal_from_fat": "25",
+        "fat": "3 g",
+        "sat_fat": "2.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "85 mg",
+        "carbs": "27 g",
+        "fiber": "1 g",
+        "sugar": "24 g",
+        "protein": "1 g",
+        "caffeine": "50 mg",
+        "total": 140
+      },
+      "Venti(20 fl oz)": {
+        "calories": "200",
+        "cal_from_fat": "40",
+        "fat": "4.5 g",
+        "sat_fat": "3.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "130 mg",
+        "carbs": "39 g",
+        "fiber": "1 g",
+        "sugar": "35 g",
+        "protein": "1 g",
+        "caffeine": "75 mg",
+        "total": 200
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "270",
+        "cal_from_fat": "50",
+        "fat": "6 g",
+        "sat_fat": "5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "170 mg",
+        "carbs": "55 g",
+        "fiber": "1 g",
+        "sugar": "48 g",
+        "protein": "1 g",
+        "caffeine": "100 mg",
+        "total": 270
+      }
+    },
+    "defaults": {}
+  },
+  "Pink Cannon Ball Drink": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "120",
+        "cal_from_fat": "21",
+        "fat": "2.5 g",
+        "sat_fat": "2 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "60 mg",
+        "carbs": "25 g",
+        "fiber": "1 g",
+        "sugar": "21 g",
+        "protein": "1 g",
+        "caffeine": "25 mg",
+        "total": 120
+      },
+      "Grande(16 fl oz)": {
+        "calories": "150",
+        "cal_from_fat": "27",
+        "fat": "3 g",
+        "sat_fat": "2.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "90 mg",
+        "carbs": "31 g",
+        "fiber": "1 g",
+        "sugar": "27 g",
+        "protein": "1 g",
+        "caffeine": "50 mg",
+        "total": 150
+      },
+      "Venti(20 fl oz)": {
+        "calories": "210",
+        "cal_from_fat": "39",
+        "fat": "4.5 g",
+        "sat_fat": "3.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "130 mg",
+        "carbs": "43 g",
+        "fiber": "1 g",
+        "sugar": "38 g",
+        "protein": "1 g",
+        "caffeine": "75 mg",
+        "total": 210
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "310",
+        "cal_from_fat": "54",
+        "fat": "6 g",
+        "sat_fat": "5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "170 mg",
+        "carbs": "62 g",
+        "fiber": "3 g",
+        "sugar": "53 g",
+        "protein": "2 g",
+        "caffeine": "100 mg",
+        "total": 310
+      }
+    },
+    "defaults": {}
+  },
+  "Strawberry Açaí Refresher": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "70",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "25 mg",
+        "carbs": "18 g",
+        "fiber": "1 g",
+        "sugar": "16 g",
+        "protein": "0 g",
+        "caffeine": "25 mg",
+        "total": 70
+      },
+      "Grande(16 fl oz)": {
+        "calories": "90",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "40 mg",
+        "carbs": "23 g",
+        "fiber": "1 g",
+        "sugar": "21 g",
+        "protein": "0 g",
+        "caffeine": "50 mg",
+        "total": 90
+      },
+      "Venti(20 fl oz)": {
+        "calories": "130",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "55 mg",
+        "carbs": "33 g",
+        "fiber": "1 g",
+        "sugar": "30 g",
+        "protein": "0 g",
+        "caffeine": "75 mg",
+        "total": 130
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "190",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "75 mg",
+        "carbs": "46 g",
+        "fiber": "2 g",
+        "sugar": "41 g",
+        "protein": "0 g",
+        "caffeine": "100 mg",
+        "total": 190
+      }
+    },
+    "defaults": {}
+  },
+  "Mango Strawberry Refresher": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "90",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "25 mg",
+        "carbs": "22 g",
+        "fiber": "1 g",
+        "sugar": "20 g",
+        "protein": "0 g",
+        "caffeine": "25 mg",
+        "total": 90
+      },
+      "Grande(16 fl oz)": {
+        "calories": "130",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "40 mg",
+        "carbs": "31 g",
+        "fiber": "1 g",
+        "sugar": "28 g",
+        "protein": "0 g",
+        "caffeine": "50 mg",
+        "total": 130
+      },
+      "Venti(20 fl oz)": {
+        "calories": "190",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "65 mg",
+        "carbs": "44 g",
+        "fiber": "1 g",
+        "sugar": "41 g",
+        "protein": "0 g",
+        "caffeine": "75 mg",
+        "total": 190
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "260",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "85 mg",
+        "carbs": "61 g",
+        "fiber": "2 g",
+        "sugar": "56 g",
+        "protein": "0 g",
+        "caffeine": "100 mg",
+        "total": 260
+      }
+    },
+    "defaults": {}
+  },
+  "Mango Dragonfruit Refresher": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "80",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "20 mg",
+        "carbs": "18 g",
+        "fiber": "0 g",
+        "sugar": "16 g",
+        "protein": "0 g",
+        "caffeine": "25 mg",
+        "total": 80
+      },
+      "Grande(16 fl oz)": {
+        "calories": "90",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "40 mg",
+        "carbs": "22 g",
+        "fiber": "0 g",
+        "sugar": "20 g",
+        "protein": "0 g",
+        "caffeine": "50 mg",
+        "total": 90
+      },
+      "Venti(20 fl oz)": {
+        "calories": "130",
+        "cal_from_fat": "5",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "55 mg",
+        "carbs": "32 g",
+        "fiber": "0 g",
+        "sugar": "28 g",
+        "protein": "0 g",
+        "caffeine": "75 mg",
+        "total": 130
+      },
+      "Trenta(30 fl oz)": {
+        "calories": "190",
+        "cal_from_fat": "5",
+        "fat": "1 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "75 mg",
+        "carbs": "45 g",
+        "fiber": "1 g",
+        "sugar": "40 g",
+        "protein": "1 g",
+        "caffeine": "100 mg",
+        "total": 190
+      }
+    },
+    "defaults": {}
+  },
+  "Caramel Ribbon Crunch Frappuccino® Blended Beverage": {
+    "category": "Frappe",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "330",
+        "cal_from_fat": "140",
+        "fat": "15 g",
+        "sat_fat": "10 g",
+        "trans_fat": "0 g",
+        "cholesterol": "50 mg",
+        "sodium": "200 mg",
+        "carbs": "45 g",
+        "fiber": "0 g",
+        "sugar": "42 g",
+        "protein": "4 g",
+        "caffeine": "60 mg",
+        "total": 330
+      },
+      "Grande(16 fl oz)": {
+        "calories": "470",
+        "cal_from_fat": "190",
+        "fat": "22 g",
+        "sat_fat": "14 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "65 mg",
+        "sodium": "280 mg",
+        "carbs": "65 g",
+        "fiber": "0 g",
+        "sugar": "60 g",
+        "protein": "5 g",
+        "caffeine": "85 mg",
+        "total": 470
+      },
+      "Venti(20 fl oz)": {
+        "calories": "570",
+        "cal_from_fat": "210",
+        "fat": "24 g",
+        "sat_fat": "15 g",
+        "trans_fat": "1 g",
+        "cholesterol": "75 mg",
+        "sodium": "380 mg",
+        "carbs": "84 g",
+        "fiber": "0 g",
+        "sugar": "78 g",
+        "protein": "7 g",
+        "caffeine": "115 mg",
+        "total": 570
+      }
+    },
+    "defaults": {}
+  },
+  "Pistachio Frappuccino® Blended Beverage": {
+    "category": "Frappe",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "270",
+        "cal_from_fat": "100",
+        "fat": "11 g",
+        "sat_fat": "7 g",
+        "trans_fat": "0 g",
+        "cholesterol": "35 mg",
+        "sodium": "190 mg",
+        "carbs": "38 g",
+        "fiber": "0 g",
+        "sugar": "38 g",
+        "protein": "3 g",
+        "caffeine": "60 mg",
+        "total": 270
+      },
+      "Grande(16 fl oz)": {
+        "calories": "380",
+        "cal_from_fat": "140",
+        "fat": "16 g",
+        "sat_fat": "9 g",
+        "trans_fat": "0 g",
+        "cholesterol": "45 mg",
+        "sodium": "280 mg",
+        "carbs": "57 g",
+        "fiber": "0 g",
+        "sugar": "55 g",
+        "protein": "4 g",
+        "caffeine": "90 mg",
+        "total": 380
+      },
+      "Venti(20 fl oz)": {
+        "calories": "420",
+        "cal_from_fat": "150",
+        "fat": "17 g",
+        "sat_fat": "10 g",
+        "trans_fat": "0 g",
+        "cholesterol": "50 mg",
+        "sodium": "320 mg",
+        "carbs": "64 g",
+        "fiber": "0 g",
+        "sugar": "63 g",
+        "protein": "6 g",
+        "caffeine": "105 mg",
+        "total": 420
+      }
+    },
+    "defaults": {}
+  },
+  "Caramel Frappuccino® Blended Beverage": {
+    "category": "Frappe",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "260",
+        "cal_from_fat": "100",
+        "fat": "11 g",
+        "sat_fat": "7 g",
+        "trans_fat": "0 g",
+        "cholesterol": "35 mg",
+        "sodium": "160 mg",
+        "carbs": "38 g",
+        "fiber": "0 g",
+        "sugar": "37 g",
+        "protein": "3 g",
+        "caffeine": "60 mg",
+        "total": 260
+      },
+      "Grande(16 fl oz)": {
+        "calories": "380",
+        "cal_from_fat": "140",
+        "fat": "16 g",
+        "sat_fat": "10 g",
+        "trans_fat": "0 g",
+        "cholesterol": "50 mg",
+        "sodium": "230 mg",
+        "carbs": "55 g",
+        "fiber": "0 g",
+        "sugar": "54 g",
+        "protein": "4 g",
+        "caffeine": "90 mg",
+        "total": 380
+      },
+      "Venti(20 fl oz)": {
+        "calories": "470",
+        "cal_from_fat": "150",
+        "fat": "17 g",
+        "sat_fat": "11 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "55 mg",
+        "sodium": "310 mg",
+        "carbs": "73 g",
+        "fiber": "0 g",
+        "sugar": "72 g",
+        "protein": "6 g",
+        "caffeine": "120 mg",
+        "total": 470
+      }
+    },
+    "defaults": {}
+  },
+  "Mocha Cookie Crumble Frappuccino® Blended Beverage": {
+    "category": "Frappe",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "350",
+        "cal_from_fat": "160",
+        "fat": "17 g",
+        "sat_fat": "11 g",
+        "trans_fat": "0 g",
+        "cholesterol": "45 mg",
+        "sodium": "200 mg",
+        "carbs": "45 g",
+        "fiber": "2 g",
+        "sugar": "40 g",
+        "protein": "4 g",
+        "caffeine": "65 mg",
+        "total": 350
+      },
+      "Grande(16 fl oz)": {
+        "calories": "480",
+        "cal_from_fat": "220",
+        "fat": "24 g",
+        "sat_fat": "15 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "60 mg",
+        "sodium": "270 mg",
+        "carbs": "62 g",
+        "fiber": "2 g",
+        "sugar": "55 g",
+        "protein": "6 g",
+        "caffeine": "95 mg",
+        "total": 480
+      },
+      "Venti(20 fl oz)": {
+        "calories": "590",
+        "cal_from_fat": "240",
+        "fat": "27 g",
+        "sat_fat": "17 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "65 mg",
+        "sodium": "360 mg",
+        "carbs": "82 g",
+        "fiber": "3 g",
+        "sugar": "75 g",
+        "protein": "8 g",
+        "caffeine": "130 mg",
+        "total": 590
+      }
+    },
+    "defaults": {}
+  },
+  "Mocha Frappuccino® Blended Beverage": {
+    "category": "Frappe",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "250",
+        "cal_from_fat": "90",
+        "fat": "10 g",
+        "sat_fat": "6 g",
+        "trans_fat": "0 g",
+        "cholesterol": "30 mg",
+        "sodium": "160 mg",
+        "carbs": "36 g",
+        "fiber": "1 g",
+        "sugar": "35 g",
+        "protein": "4 g",
+        "caffeine": "70 mg",
+        "total": 250
+      },
+      "Grande(16 fl oz)": {
+        "calories": "370",
+        "cal_from_fat": "140",
+        "fat": "15 g",
+        "sat_fat": "10 g",
+        "trans_fat": "0 g",
+        "cholesterol": "45 mg",
+        "sodium": "220 mg",
+        "carbs": "54 g",
+        "fiber": "1 g",
+        "sugar": "51 g",
+        "protein": "5 g",
+        "caffeine": "100 mg",
+        "total": 370
+      },
+      "Venti(20 fl oz)": {
+        "calories": "470",
+        "cal_from_fat": "160",
+        "fat": "17 g",
+        "sat_fat": "11 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "50 mg",
+        "sodium": "300 mg",
+        "carbs": "71 g",
+        "fiber": "2 g",
+        "sugar": "67 g",
+        "protein": "7 g",
+        "caffeine": "130 mg",
+        "total": 470
+      }
+    },
+    "defaults": {}
+  },
+  "Coffee Frappuccino® Blended Beverage": {
+    "category": "Frappe",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "160",
+        "cal_from_fat": "20",
+        "fat": "2.5 g",
+        "sat_fat": "1.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "10 mg",
+        "sodium": "160 mg",
+        "carbs": "31 g",
+        "fiber": "0 g",
+        "sugar": "31 g",
+        "protein": "3 g",
+        "caffeine": "65 mg",
+        "total": 160
+      },
+      "Grande(16 fl oz)": {
+        "calories": "230",
+        "cal_from_fat": "30",
+        "fat": "3 g",
+        "sat_fat": "2 g",
+        "trans_fat": "0 g",
+        "cholesterol": "10 mg",
+        "sodium": "230 mg",
+        "carbs": "46 g",
+        "fiber": "0 g",
+        "sugar": "45 g",
+        "protein": "3 g",
+        "caffeine": "95 mg",
+        "total": 230
+      },
+      "Venti(20 fl oz)": {
+        "calories": "310",
+        "cal_from_fat": "45",
+        "fat": "5 g",
+        "sat_fat": "2.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "15 mg",
+        "sodium": "300 mg",
+        "carbs": "60 g",
+        "fiber": "0 g",
+        "sugar": "59 g",
+        "protein": "5 g",
+        "caffeine": "125 mg",
+        "total": 310
+      }
+    },
+    "defaults": {}
+  },
+  "Vanilla Bean Crème Frappuccino® Blended Beverage": {
+    "category": "Frappe",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "260",
+        "cal_from_fat": "110",
+        "fat": "12 g",
+        "sat_fat": "7 g",
+        "trans_fat": "0 g",
+        "cholesterol": "35 mg",
+        "sodium": "170 mg",
+        "carbs": "35 g",
+        "fiber": "0 g",
+        "sugar": "35 g",
+        "protein": "4 g",
+        "caffeine": "0 mg",
+        "total": 260
+      },
+      "Grande(16 fl oz)": {
+        "calories": "380",
+        "cal_from_fat": "150",
+        "fat": "16 g",
+        "sat_fat": "10 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "50 mg",
+        "sodium": "250 mg",
+        "carbs": "53 g",
+        "fiber": "0 g",
+        "sugar": "52 g",
+        "protein": "5 g",
+        "caffeine": "0 mg",
+        "total": 380
+      },
+      "Venti(20 fl oz)": {
+        "calories": "470",
+        "cal_from_fat": "160",
+        "fat": "18 g",
+        "sat_fat": "11 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "55 mg",
+        "sodium": "330 mg",
+        "carbs": "68 g",
+        "fiber": "0 g",
+        "sugar": "68 g",
+        "protein": "7 g",
+        "caffeine": "0 mg",
+        "total": 470
+      }
+    },
+    "defaults": {}
+  },
+  "Horchata Crème Frappuccino® Blended Beverage": {
+    "category": "Frappe",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "260",
+        "cal_from_fat": "105",
+        "fat": "12 g",
+        "sat_fat": "7 g",
+        "trans_fat": "0 g",
+        "cholesterol": "35 mg",
+        "sodium": "170 mg",
+        "carbs": "36 g",
+        "fiber": "0 g",
+        "sugar": "35 g",
+        "protein": "4 g",
+        "caffeine": "0 mg",
+        "total": 260
+      },
+      "Grande(16 fl oz)": {
+        "calories": "380",
+        "cal_from_fat": "146",
+        "fat": "16 g",
+        "sat_fat": "10 g",
+        "trans_fat": "0 g",
+        "cholesterol": "50 mg",
+        "sodium": "250 mg",
+        "carbs": "53 g",
+        "fiber": "0 g",
+        "sugar": "53 g",
+        "protein": "5 g",
+        "caffeine": "0 mg",
+        "total": 380
+      },
+      "Venti(20 fl oz)": {
+        "calories": "430",
+        "cal_from_fat": "143",
+        "fat": "16 g",
+        "sat_fat": "10 g",
+        "trans_fat": "0 g",
+        "cholesterol": "50 mg",
+        "sodium": "310 mg",
+        "carbs": "66 g",
+        "fiber": "0 g",
+        "sugar": "65 g",
+        "protein": "6 g",
+        "caffeine": "0 mg",
+        "total": 430
+      }
+    },
+    "defaults": {}
+  },
+  "Lavender Crème Frappuccino® Blended Beverage": {
+    "category": "Frappe",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "260",
+        "cal_from_fat": "100",
+        "fat": "12 g",
+        "sat_fat": "7 g",
+        "trans_fat": "0 g",
+        "cholesterol": "35 mg",
+        "sodium": "230 mg",
+        "carbs": "35 g",
+        "fiber": "0 g",
+        "sugar": "35 g",
+        "protein": "4 g",
+        "caffeine": "0 mg",
+        "total": 260
+      },
+      "Grande(16 fl oz)": {
+        "calories": "370",
+        "cal_from_fat": "140",
+        "fat": "16 g",
+        "sat_fat": "10 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "50 mg",
+        "sodium": "330 mg",
+        "carbs": "52 g",
+        "fiber": "0 g",
+        "sugar": "52 g",
+        "protein": "5 g",
+        "caffeine": "0 mg",
+        "total": 370
+      },
+      "Venti(20 fl oz)": {
+        "calories": "450",
+        "cal_from_fat": "160",
+        "fat": "18 g",
+        "sat_fat": "11 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "55 mg",
+        "sodium": "440 mg",
+        "carbs": "68 g",
+        "fiber": "0 g",
+        "sugar": "67 g",
+        "protein": "7 g",
+        "caffeine": "0 mg",
+        "total": 450
+      }
+    },
+    "defaults": {}
+  },
+  "Pistachio Crème Frappuccino® Blended Beverage": {
+    "category": "Frappe",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "240",
+        "cal_from_fat": "110",
+        "fat": "12 g",
+        "sat_fat": "7 g",
+        "trans_fat": "0 g",
+        "cholesterol": "35 mg",
+        "sodium": "200 mg",
+        "carbs": "30 g",
+        "fiber": "0 g",
+        "sugar": "30 g",
+        "protein": "4 g",
+        "caffeine": "0 mg",
+        "total": 240
+      },
+      "Grande(16 fl oz)": {
+        "calories": "360",
+        "cal_from_fat": "150",
+        "fat": "17 g",
+        "sat_fat": "10 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "50 mg",
+        "sodium": "310 mg",
+        "carbs": "46 g",
+        "fiber": "0 g",
+        "sugar": "45 g",
+        "protein": "6 g",
+        "caffeine": "0 mg",
+        "total": 360
+      },
+      "Venti(20 fl oz)": {
+        "calories": "410",
+        "cal_from_fat": "170",
+        "fat": "19 g",
+        "sat_fat": "11 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "55 mg",
+        "sodium": "370 mg",
+        "carbs": "55 g",
+        "fiber": "0 g",
+        "sugar": "54 g",
+        "protein": "7 g",
+        "caffeine": "0 mg",
+        "total": 410
+      }
+    },
+    "defaults": {}
+  },
+  "Strawberry Crème Frappuccino® Blended Beverage": {
+    "category": "Frappe",
+    "is_new": true,
+    "sizes": {
+      "Tall(12 fl oz)": {
+        "calories": "250",
+        "cal_from_fat": "100",
+        "fat": "11 g",
+        "sat_fat": "7 g",
+        "trans_fat": "0 g",
+        "cholesterol": "35 mg",
+        "sodium": "160 mg",
+        "carbs": "33 g",
+        "fiber": "0 g",
+        "sugar": "32 g",
+        "protein": "4 g",
+        "caffeine": "0 mg",
+        "total": 250
+      },
+      "Grande(16 fl oz)": {
+        "calories": "370",
+        "cal_from_fat": "140",
+        "fat": "16 g",
+        "sat_fat": "10 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "50 mg",
+        "sodium": "240 mg",
+        "carbs": "51 g",
+        "fiber": "0 g",
+        "sugar": "51 g",
+        "protein": "5 g",
+        "caffeine": "0 mg",
+        "total": 370
+      },
+      "Venti(20 fl oz)": {
+        "calories": "460",
+        "cal_from_fat": "160",
+        "fat": "17 g",
+        "sat_fat": "11 g",
+        "trans_fat": "0.5 g",
+        "cholesterol": "55 mg",
+        "sodium": "320 mg",
+        "carbs": "66 g",
+        "fiber": "1 g",
+        "sugar": "65 g",
+        "protein": "7 g",
+        "caffeine": "0 mg",
+        "total": 460
+      }
+    },
+    "defaults": {}
+  },
+  "Waiākea Hawaiian Volcanic Water": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "500-packaged(8 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "20 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 0
+      }
+    },
+    "defaults": {}
+  },
+  "Ethos® Water": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "23.7-packaged(23.7 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 0
+      }
+    },
+    "defaults": {}
+  },
+  "Spindrift® Lemon Sparkling Water": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "12-packaged(12 fl oz)": {
+        "calories": "3",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "1 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 3
+      }
+    },
+    "defaults": {}
+  },
+  "DASANI® Water": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "20-packaged(20 fl oz)": {
+        "calories": "0",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 0
+      }
+    },
+    "defaults": {}
+  },
+  "Koia® Cacao Bean Nutrition Shake": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "11-packaged(11 fl oz)": {
+        "calories": "180",
+        "cal_from_fat": "0",
+        "fat": "6 g",
+        "sat_fat": "0.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "240 mg",
+        "carbs": "12 g",
+        "fiber": "6 g",
+        "sugar": "3 g",
+        "protein": "20 g",
+        "caffeine": "0 mg",
+        "total": 180
+      }
+    },
+    "defaults": {}
+  },
+  "Koia® Vanilla Bean Nutrition Shake": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "11-packaged(11 fl oz)": {
+        "calories": "180",
+        "cal_from_fat": "0",
+        "fat": "6 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "250 mg",
+        "carbs": "12 g",
+        "fiber": "6 g",
+        "sugar": "3 g",
+        "protein": "20 g",
+        "caffeine": "0 mg",
+        "total": 180
+      }
+    },
+    "defaults": {}
+  },
+  "Horizon Organic® Lowfat Chocolate Milk": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "8-packaged(8 fl oz)": {
+        "calories": "150",
+        "cal_from_fat": "25",
+        "fat": "2.5 g",
+        "sat_fat": "1.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "10 mg",
+        "sodium": "125 mg",
+        "carbs": "24 g",
+        "fiber": "1 g",
+        "sugar": "23 g",
+        "protein": "8 g",
+        "caffeine": "0 mg",
+        "total": 150
+      }
+    },
+    "defaults": {}
+  },
+  "Horizon Organic® Lowfat Milk": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "8-packaged(8 fl oz)": {
+        "calories": "150",
+        "cal_from_fat": "20",
+        "fat": "2.5 g",
+        "sat_fat": "1.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "10 mg",
+        "sodium": "105 mg",
+        "carbs": "23 g",
+        "fiber": "0 g",
+        "sugar": "23 g",
+        "protein": "8 g",
+        "caffeine": "0 mg",
+        "total": 150
+      }
+    },
+    "defaults": {}
+  },
+  "Sol-ti® GINGER SuperShot®": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "2.1-packaged(1 ct)": {
+        "calories": "20",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "4 g",
+        "fiber": "1 g",
+        "sugar": "4 g",
+        "protein": "1 g",
+        "caffeine": "0 mg",
+        "total": 20
+      }
+    },
+    "defaults": {}
+  },
+  "Sol-ti® TURMERIC SuperShot®": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "2.1-packaged(1 ct)": {
+        "calories": "20",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "4 g",
+        "fiber": "1 g",
+        "sugar": "1 g",
+        "protein": "1 g",
+        "caffeine": "0 mg",
+        "total": 20
+      }
+    },
+    "defaults": {}
+  },
+  "Evolution Fresh® Pure Orange": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "11-packaged(11 fl oz)": {
+        "calories": "170",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "10 mg",
+        "carbs": "39 g",
+        "fiber": "0 g",
+        "sugar": "35 g",
+        "protein": "3 g",
+        "caffeine": "0 mg",
+        "total": 170
+      }
+    },
+    "defaults": {}
+  },
+  "Tree Top® Organic Apple Juice – 6.75 fl oz": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "6.75-packaged(6.75 fl oz)": {
+        "calories": "100",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "5 mg",
+        "carbs": "24 g",
+        "fiber": "0 g",
+        "sugar": "23 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 100
+      }
+    },
+    "defaults": {}
+  },
+  "Poppi® Shirley Temple Soda": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "12-packaged(12 fl oz)": {
+        "calories": "30",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "9 g",
+        "fiber": "3 g",
+        "sugar": "5 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 30
+      }
+    },
+    "defaults": {}
+  },
+  "Poppi® Grape Soda": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "12-packaged(12 fl oz)": {
+        "calories": "30",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "5 mg",
+        "carbs": "10 g",
+        "fiber": "3 g",
+        "sugar": "5 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 30
+      }
+    },
+    "defaults": {}
+  },
+  "Starbucks® Iced Energy Blueberry Lemonade": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "12-packaged(1 ct)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "35 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "160 mg",
+        "total": 5
+      }
+    },
+    "defaults": {}
+  },
+  "Starbucks® Iced Energy Tropical Peach": {
+    "category": "Cold",
+    "is_new": true,
+    "sizes": {
+      "12-packaged(1 ct)": {
+        "calories": "5",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "35 mg",
+        "carbs": "0 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "0 g",
+        "caffeine": "160 mg",
+        "total": 5
+      }
+    },
+    "defaults": {}
+  },
+  "MUSH Chocolate Peanut Butter Protein Overnight Oats": {
+    "category": "Food/Meal",
+    "is_new": true,
+    "sizes": {
+      "1 piece(156 g)": {
+        "calories": "290",
+        "cal_from_fat": "90",
+        "fat": "10 g",
+        "sat_fat": "2 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "280 mg",
+        "carbs": "40 g",
+        "fiber": "7 g",
+        "sugar": "14 g",
+        "protein": "15 g",
+        "caffeine": "0 mg",
+        "total": 290
+      }
+    },
+    "defaults": {}
+  },
+  "Ellenos® Muesli Yogurt – No Added Sugar": {
+    "category": "Food/Meal",
+    "is_new": true,
+    "sizes": {
+      "1 piece(198 g)": {
+        "calories": "280",
+        "cal_from_fat": "100",
+        "fat": "11 g",
+        "sat_fat": "6 g",
+        "trans_fat": "0 g",
+        "cholesterol": "35 mg",
+        "sodium": "140 mg",
+        "carbs": "28 g",
+        "fiber": "4 g",
+        "sugar": "10 g",
+        "protein": "18 g",
+        "caffeine": "0 mg",
+        "total": 280
+      }
+    },
+    "defaults": {}
+  },
+  "Ellenos Strawberry Shortcake Greek Yogurt": {
+    "category": "Food/Meal",
+    "is_new": true,
+    "sizes": {
+      "1 piece(198 g)": {
+        "calories": "310",
+        "cal_from_fat": "100",
+        "fat": "11 g",
+        "sat_fat": "7 g",
+        "trans_fat": "0 g",
+        "cholesterol": "45 mg",
+        "sodium": "115 mg",
+        "carbs": "39 g",
+        "fiber": "3 g",
+        "sugar": "29 g",
+        "protein": "16 g",
+        "caffeine": "0 mg",
+        "total": 310
+      }
+    },
+    "defaults": {}
+  },
+  "Ellenos Muesli Yogurt": {
+    "category": "Food/Meal",
+    "is_new": true,
+    "sizes": {
+      "1 piece(198 g)": {
+        "calories": "340",
+        "cal_from_fat": "0",
+        "fat": "13 g",
+        "sat_fat": "7 g",
+        "trans_fat": "0 g",
+        "cholesterol": "45 mg",
+        "sodium": "125 mg",
+        "carbs": "38 g",
+        "fiber": "4 g",
+        "sugar": "28 g",
+        "protein": "19 g",
+        "caffeine": "0 mg",
+        "total": 340
+      }
+    },
+    "defaults": {}
+  },
+  "Strawberry Matcha Loaf​": {
+    "category": "Bakery",
+    "is_new": true,
+    "sizes": {
+      "1 piece(115 g)": {
+        "calories": "450",
+        "cal_from_fat": "200",
+        "fat": "22 g",
+        "sat_fat": "5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "70 mg",
+        "sodium": "330 mg",
+        "carbs": "57 g",
+        "fiber": "1 g",
+        "sugar": "37 g",
+        "protein": "5 g",
+        "caffeine": "0 mg",
+        "total": 450
+      }
+    },
+    "defaults": {}
+  },
+  "Banana, Walnut & Pecan Loaf": {
+    "category": "Bakery",
+    "is_new": true,
+    "sizes": {
+      "1 piece(113 g)": {
+        "calories": "380",
+        "cal_from_fat": "180",
+        "fat": "20 g",
+        "sat_fat": "3 g",
+        "trans_fat": "0 g",
+        "cholesterol": "50 mg",
+        "sodium": "300 mg",
+        "carbs": "46 g",
+        "fiber": "2 g",
+        "sugar": "26 g",
+        "protein": "6 g",
+        "caffeine": "0 mg",
+        "total": 380
+      }
+    },
+    "defaults": {}
+  },
+  "Khloud™ White Cheddar Protein Popcorn": {
+    "category": "Food/Meal",
+    "is_new": true,
+    "sizes": {
+      "1 piece(30 g)": {
+        "calories": "160",
+        "cal_from_fat": "120",
+        "fat": "13 g",
+        "sat_fat": "2 g",
+        "trans_fat": "0 g",
+        "cholesterol": "5 mg",
+        "sodium": "160 mg",
+        "carbs": "11 g",
+        "fiber": "2 g",
+        "sugar": "2 g",
+        "protein": "7 g",
+        "caffeine": "0 mg",
+        "total": 160
+      }
+    },
+    "defaults": {}
+  },
+  "Khloud™ Sweet & Salty Kettle Corn Protein Popcorn": {
+    "category": "Food/Meal",
+    "is_new": true,
+    "sizes": {
+      "1 piece(30 g)": {
+        "calories": "150",
+        "cal_from_fat": "110",
+        "fat": "12 g",
+        "sat_fat": "4 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "170 mg",
+        "carbs": "12 g",
+        "fiber": "1 g",
+        "sugar": "5 g",
+        "protein": "7 g",
+        "caffeine": "0 mg",
+        "total": 150
+      }
+    },
+    "defaults": {}
+  },
+  "All In™ Madagascar Vanilla, Honey & Almonds Bar": {
+    "category": "Snacks & Sweets",
+    "is_new": true,
+    "sizes": {
+      "1 piece(40 g)": {
+        "calories": "170",
+        "cal_from_fat": "80",
+        "fat": "9 g",
+        "sat_fat": "1 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "85 mg",
+        "carbs": "21 g",
+        "fiber": "7 g",
+        "sugar": "6 g",
+        "protein": "4 g",
+        "caffeine": "0 mg",
+        "total": 170
+      }
+    },
+    "defaults": {}
+  },
+  "Perfect Bar® – Dark Chocolate Chip Peanut Butter": {
+    "category": "Snacks & Sweets",
+    "is_new": true,
+    "sizes": {
+      "1 piece(65 g)": {
+        "calories": "330",
+        "cal_from_fat": "180",
+        "fat": "20 g",
+        "sat_fat": "4 g",
+        "trans_fat": "0 g",
+        "cholesterol": "10 mg",
+        "sodium": "105 mg",
+        "carbs": "24 g",
+        "fiber": "4 g",
+        "sugar": "18 g",
+        "protein": "15 g",
+        "caffeine": "0 mg",
+        "total": 330
+      }
+    },
+    "defaults": {}
+  },
+  "That's It® – Apple + Mango Bar": {
+    "category": "Snacks & Sweets",
+    "is_new": true,
+    "sizes": {
+      "1 piece(35 g)": {
+        "calories": "100",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "25 mg",
+        "carbs": "27 g",
+        "fiber": "3 g",
+        "sugar": "23 g",
+        "protein": "0 g",
+        "caffeine": "0 mg",
+        "total": 100
+      }
+    },
+    "defaults": {}
+  },
+  "That's It® – Apple + Blueberry Bar": {
+    "category": "Snacks & Sweets",
+    "is_new": true,
+    "sizes": {
+      "1 piece(35 g)": {
+        "calories": "100",
+        "cal_from_fat": "0",
+        "fat": "0 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "25 mg",
+        "carbs": "26 g",
+        "fiber": "4 g",
+        "sugar": "19 g",
+        "protein": "1 g",
+        "caffeine": "0 mg",
+        "total": 100
+      }
+    },
+    "defaults": {}
+  },
+  "Country Archer™ – Hickory Smoke Turkey Jerky": {
+    "category": "Snacks & Sweets",
+    "is_new": true,
+    "sizes": {
+      "1 piece(28 g)": {
+        "calories": "70",
+        "cal_from_fat": "10",
+        "fat": "1 g",
+        "sat_fat": "0 g",
+        "trans_fat": "0 g",
+        "cholesterol": "20 mg",
+        "sodium": "330 mg",
+        "carbs": "5 g",
+        "fiber": "0 g",
+        "sugar": "4 g",
+        "protein": "10 g",
+        "caffeine": "0 mg",
+        "total": 70
+      }
+    },
+    "defaults": {}
+  },
+  "SkinnyDipped Coconut Almond Bite": {
+    "category": "Snacks & Sweets",
+    "is_new": true,
+    "sizes": {
+      "1 piece(15 g)": {
+        "calories": "80",
+        "cal_from_fat": "50",
+        "fat": "6 g",
+        "sat_fat": "3.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "0 mg",
+        "sodium": "0 mg",
+        "carbs": "7 g",
+        "fiber": "2 g",
+        "sugar": "3 g",
+        "protein": "1 g",
+        "caffeine": "0 mg",
+        "total": 80
+      }
+    },
+    "defaults": {}
+  },
+  "Organic Valley Stringles® Mozzarella String Cheese": {
+    "category": "Food/Meal",
+    "is_new": true,
+    "sizes": {
+      "1 piece(28 g)": {
+        "calories": "80",
+        "cal_from_fat": "50",
+        "fat": "6 g",
+        "sat_fat": "3.5 g",
+        "trans_fat": "0 g",
+        "cholesterol": "20 mg",
+        "sodium": "200 mg",
+        "carbs": "1 g",
+        "fiber": "0 g",
+        "sugar": "0 g",
+        "protein": "7 g",
+        "caffeine": "0 mg",
+        "total": 80
+      }
+    },
+    "defaults": {}
+  }
+}

@@ -7,17 +7,18 @@ WORKDIR /app
 # Python + Jinja2 for the generator
 RUN apk add --no-cache python3 \
  && python3 -m venv /opt/venv \
- && /opt/venv/bin/pip install --no-cache-dir jinja2
+ && /opt/venv/bin/pip install --no-cache-dir jinja2 Pillow
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Node deps (Tailwind CLI + plugins) — cached unless package files change
 COPY package.json package-lock.json* ./
 RUN npm ci || npm install
 
-# Source + data
+# Source + data + product images
 COPY tailwind.config.js ./
 COPY src ./src
 COPY data ./data
+COPY images ./images
 
 # Canonical/sitemap base URL (overridable via compose build arg)
 ARG NUTRIBUCKS_SITE_URL=https://nutribucks.shop

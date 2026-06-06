@@ -26,6 +26,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
+IMAGES_DIR = ROOT / "images"
+IMG_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 # ---------------------------------------------------------------------------
 # Category metadata: data label -> (slug, display title, icon, short blurb)
@@ -148,6 +150,29 @@ def slugify(name: str) -> str:
     return s or "drink"
 
 
+def norm_key(name: str) -> str:
+    """Loose match key: strip ®/™, fold accents, drop punctuation, collapse spaces.
+    Maps a product name and its image filename to the same token so e.g.
+    'Strawberry Açaí Refresher' == 'Strawberry Acai Refresher.jpg'."""
+    s = name.replace("®", "").replace("™", "").replace("℠", "")
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
+    s = re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
+    return s
+
+
+def build_image_index() -> dict[str, str]:
+    """norm_key -> source image filename. Presence of an image == product is on the
+    live Starbucks menu (see MISSING-IMAGES.md), so it doubles as the active-menu filter."""
+    index: dict[str, str] = {}
+    if not IMAGES_DIR.exists():
+        return index
+    for p in sorted(IMAGES_DIR.iterdir()):
+        if p.suffix.lower() not in IMG_EXTS:
+            continue
+        index.setdefault(norm_key(p.stem), p.name)
+    return index
+
+
 def num(value) -> float:
     """Parse '7 g', '150 mg', '190', 0 -> float. Returns 0.0 if not parseable."""
     if value is None:
@@ -225,9 +250,21 @@ def build_dataset() -> dict:
     products = json.loads((DATA_DIR / "products.json").read_text(encoding="utf-8"))
     group_of = build_group_map(products)
 
+    # Merge the freshly-scraped live-menu additions (marked is_new). Same-name entries
+    # override the historical record so the newest figures win.
+    new_path = DATA_DIR / "new_nutrition.json"
+    if new_path.exists():
+        new_recs = json.loads(new_path.read_text(encoding="utf-8"))
+        for nm, rec in new_recs.items():
+            rec.setdefault("is_new", True)
+            nutrition[nm] = rec
+
+    image_index = build_image_index()
+
     drinks: dict[str, dict] = {}
     by_category: dict[str, list[str]] = {c["slug"]: [] for c in CATEGORIES.values()}
     slug_seen: dict[str, int] = {}
+    dropped: list[str] = []  # had nutrition but no live-menu image -> off-menu, excluded
 
     for name, rec in nutrition.items():
         cat_label = rec.get("category", "Hot")
@@ -236,6 +273,12 @@ def build_dataset() -> dict:
             continue
         raw_sizes = rec.get("sizes", {})
         if not raw_sizes:
+            continue
+
+        # Keep only products that have a product image == still on the live menu.
+        image_file = image_index.get(norm_key(name))
+        if not image_file:
+            dropped.append(name)
             continue
 
         ordered = order_sizes(raw_sizes)
@@ -287,6 +330,10 @@ def build_dataset() -> dict:
             "default_milk": default_milk,
             "default_shots": default_shots,
             "base": base,
+            # public (clean-slug) webp path + source file the build optimizes from
+            "image": f"images/{slug}.webp",
+            "image_src": str(IMAGES_DIR / image_file),
+            "image_alt": f"{name} from Starbucks",
         }
         by_category[cat["slug"]].append(slug)
 
@@ -301,6 +348,7 @@ def build_dataset() -> dict:
         "macro_fields": MACRO_FIELDS,
         "milk_choices": MILK_CHOICES,
         "deltas": DELTAS,
+        "dropped": dropped,
     }
 
 
@@ -317,6 +365,8 @@ def minimal_for_client(dataset: dict) -> dict:
             "default_milk": d["default_milk"],
             "default_shots": d["default_shots"],
             "base": d["base"],
+            "image": d["image"],
+            "image_alt": d["image_alt"],
         }
     return {
         "milk_choices": dataset["milk_choices"],

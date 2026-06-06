@@ -16,12 +16,21 @@
 <meta property="og:title" content="{{ page.title }}">
 <meta property="og:description" content="{{ page.description }}">
 <meta property="og:url" content="{{ page.canonical }}">
+{% if page.image %}
+<meta property="og:image" content="{{ page.image }}">
+<meta property="og:image:alt" content="{{ page.image_alt }}">
+<meta property="og:image:type" content="image/webp">
+<meta property="og:image:width" content="{{ page.image_w }}">
+<meta property="og:image:height" content="{{ page.image_h }}">
+{% else %}
 <meta property="og:image" content="{{ site.url }}/assets/og-default.svg">
+{% endif %}
 <meta property="og:updated_time" content="{{ build_date }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title }}">
 <meta name="twitter:description" content="{{ page.description }}">
-<meta name="twitter:image" content="{{ site.url }}/assets/og-default.svg">
+<meta name="twitter:image" content="{{ page.image | default(site.url ~ '/assets/og-default.svg') }}">
+{% if page.image_alt %}<meta name="twitter:image:alt" content="{{ page.image_alt }}">{% endif %}
 
 <!-- Fonts: preconnect + display=swap (CWS: avoids render-block, limits CLS) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

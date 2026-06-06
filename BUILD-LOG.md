@@ -94,6 +94,28 @@ All 7 planned phases done. The site builds, compiles, serves, and passes every c
 
 ---
 
+## Update 2026-06-06 — live-menu refresh + real product photos
+
+Driven by `NEW-PRODUCTS.md`, `MISSING-IMAGES.md` and `API-COMPARISON.md` (live Starbucks API).
+
+- **Catalog now matches the live menu.** A product is kept only if it has a photo in
+  `images/` (image presence == on the live menu). This excluded **229 off-menu products**
+  — exactly the 226 gone-from-menu + 3 broken-CDN items flagged in `MISSING-IMAGES.md`.
+- **Added 77 new live-menu products** from `data/new_nutrition.json` (real per-size macros),
+  merged in `prepare_data.py` and badged "New".
+- **Net catalog: 239 items** (was 391) — leaner and current. 247 sitemap URLs.
+- **Real product images replace the SVG tiles** on cards, the drink hero, the calculator
+  picker + live panel, and per-drink OG/Twitter cards. Source 400×400 JPEGs are optimized to
+  clean-slug **WebP** (q80) at build time via Pillow → `dist/images/{slug}.webp`
+  (2.8 MB → 1.4 MB). SVG tile retained as a no-image fallback.
+- **SEO/CWV (per the skills):** descriptive `alt` (`{name} — Starbucks {category}`),
+  `width`/`height` on every `<img>` (no CLS), `fetchpriority="high"` on the drink hero (LCP)
+  and `loading="lazy"`+`decoding="async"` on all below-the-fold/list images;
+  `ImageObject` in `MenuItem`/`WebPage` JSON-LD; `og:image*` (type/dims/alt) per drink.
+  nginx caches `/images/` for 30 days; Dockerfile installs Pillow and copies `images/`.
+- **Verified:** generator 239 drinks · Tailwind purged to 28 KB · 495 JSON-LD blocks parse
+  with 0 errors · `check_links.py` 7906 links → 0 broken · all referenced WebP files exist.
+
 ## Source docs used at the start of the session (inputs)
 
 The build was driven by these five files (paths relative to `nutribucks/`):

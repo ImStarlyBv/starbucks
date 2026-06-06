@@ -111,7 +111,7 @@ function initDrinkCalc(root, drink, deltas) {
 }
 
 /* ---- Build the calculator panel markup (standalone calculator page) ----- */
-function panelHTML(drink, milkChoices) {
+function panelHTML(drink, milkChoices, rel = "") {
   const b = drink.base[drink.default_size];
   const sizeBtns = drink.is_food ? "" : `
     <section class="space-y-3">
@@ -156,9 +156,10 @@ function panelHTML(drink, milkChoices) {
       </div>
     </section>`;
 
+  const hero = drink.image ? `<img src="${rel}${drink.image}" alt="${esc(drink.image_alt || drink.name)}" width="600" height="600" decoding="async" class="w-20 h-20 rounded-2xl object-cover shrink-0 shadow-sm">` : "";
   return `<div class="space-y-8">
-    <header><span class="text-caption font-semibold uppercase tracking-wider text-secondary">${esc(drink.category)}</span>
-      <h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">${esc(drink.name)}</h2></header>
+    <header class="flex items-center gap-4">${hero}<div><span class="text-caption font-semibold uppercase tracking-wider text-secondary">${esc(drink.category)}</span>
+      <h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">${esc(drink.name)}</h2></div></header>
     ${sizeBtns}${panel}${table}
   </div>`;
 }
@@ -241,7 +242,7 @@ async function initCalculatorPage() {
   function load(slug) {
     const drink = data.drinks[slug];
     if (!drink) return;
-    panel.innerHTML = panelHTML(drink, data.milk_choices);
+    panel.innerHTML = panelHTML(drink, data.milk_choices, wrap.getAttribute("data-rel") || "");
     initDrinkCalc(panel, drink, data.deltas);
     panel.scrollIntoView({ behavior: "smooth", block: "start" });
   }

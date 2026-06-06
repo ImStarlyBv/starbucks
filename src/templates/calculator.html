@@ -65,8 +65,9 @@
           {% for d in all_drinks %}
           <li data-name="{{ d.name|lower }}" data-cat="{{ d.category }}">
             <a href="{{ rel }}drink/{{ d.slug }}/" data-slug="{{ d.slug }}"
-               class="flex items-center justify-between gap-2 px-4 py-2.5 hover:bg-surface-container-low transition-colors">
-              <span class="text-sm text-on-surface">{{ d.name }}</span>
+               class="flex items-center gap-3 px-4 py-2.5 hover:bg-surface-container-low transition-colors">
+              {% if d.image %}<img src="{{ rel }}{{ d.image }}" alt="" width="600" height="600" loading="lazy" decoding="async" class="w-9 h-9 rounded-lg object-cover shrink-0">{% endif %}
+              <span class="text-sm text-on-surface flex-1 min-w-0 truncate">{{ d.name }}</span>
               <span class="text-caption text-outline whitespace-nowrap">{{ d.base[d.default_size].calories }} kcal</span>
             </a>
           </li>

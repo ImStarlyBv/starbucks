@@ -18,8 +18,13 @@ import shutil
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from PIL import Image
 
 from prepare_data import build_dataset, minimal_for_client, MACRO_FIELDS, DELTAS, MILK_CHOICES
+
+# Product images are square; we serve one responsive size and let the layout scale it.
+IMAGE_MAX = 600
+IMAGE_QUALITY = 80
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "src"
@@ -143,10 +148,16 @@ def write(env, template, out_rel: str, ctx: dict):
     return out_path
 
 
-def page(title, description, path, og_type="website"):
-    """Build the per-page meta object. `path` is the public URL path (with trailing /)."""
+def page(title, description, path, og_type="website", image=None, image_alt=None):
+    """Build the per-page meta object. `path` is the public URL path (with trailing /).
+    `image` is a site-relative path (e.g. images/foo.webp); falls back to the default OG SVG."""
     canonical = f"{SITE['url']}{path}"
-    return {"title": title, "description": description, "canonical": canonical, "og_type": og_type}
+    meta = {"title": title, "description": description, "canonical": canonical, "og_type": og_type}
+    if image:
+        meta["image"] = f"{SITE['url']}/{image}"
+        meta["image_alt"] = image_alt or title
+        meta["image_w"], meta["image_h"] = IMAGE_MAX, IMAGE_MAX
+    return meta
 
 
 # ---------------------------------------------------------------------------
@@ -179,6 +190,30 @@ def emit_assets(dataset):
         json.dumps(minimal_for_client(dataset), ensure_ascii=False, separators=(",", ":")),
         encoding="utf-8",
     )
+
+
+def emit_images(dataset):
+    """Optimize each product photo to a clean-slug WebP in dist/images/.
+    Source files are 400x400 JPEGs; WebP at q80 roughly halves the bytes while keeping
+    crisp product shots. One file per drink, reused for cards, hero and OG/social."""
+    out = DIST / "images"
+    out.mkdir(parents=True, exist_ok=True)
+    written = 0
+    for d in dataset["drinks"].values():
+        src = d.get("image_src")
+        if not src or not Path(src).exists():
+            continue
+        dst = DIST / d["image"]
+        try:
+            with Image.open(src) as im:
+                im = im.convert("RGB")
+                if max(im.size) > IMAGE_MAX:
+                    im.thumbnail((IMAGE_MAX, IMAGE_MAX))
+                im.save(dst, "WEBP", quality=IMAGE_QUALITY, method=6)
+            written += 1
+        except Exception as exc:  # noqa: BLE001 — never fail the whole build on one image
+            print(f"  ! image failed for {d['slug']}: {exc}")
+    print(f"images: {written} product photos -> dist/images/*.webp")
 
 
 def emit_meta_files(urls):
@@ -294,7 +329,8 @@ def main():
             **common, "nav": d["category"], "d": d, "related": related,
             "macro_fields": MACRO_FIELDS, "milk_choices": MILK_CHOICES,
             "faqs": drink_faqs(d), "drink_payload": payload,
-            "page": page(title, desc, f"/drink/{slug}/", og_type="article"),
+            "page": page(title, desc, f"/drink/{slug}/", og_type="article",
+                         image=d["image"], image_alt=d["image_alt"]),
         })
         sitemap_urls.append((f"/drink/{slug}/", "monthly", "0.7"))
 
@@ -316,10 +352,13 @@ def main():
     })
 
     emit_assets(dataset)
+    emit_images(dataset)
     emit_meta_files(sitemap_urls)
 
     print(f"Built {drink_count} drinks + {len(categories)} categories + home + calculator + 404")
     print(f"Sitemap: {len(sitemap_urls)} URLs · site base: {SITE['url']}")
+    dropped = dataset.get("dropped", [])
+    print(f"Excluded {len(dropped)} off-menu products (no live-menu image).")
 
 
 if __name__ == "__main__":
