@@ -28,7 +28,7 @@ TEMPLATES = SRC / "templates"
 
 SITE = {
     "name": "NutriBucks",
-    "url": os.environ.get("NUTRIBUCKS_SITE_URL", "https://www.nutribucks.app").rstrip("/"),
+    "url": os.environ.get("NUTRIBUCKS_SITE_URL", "https://nutribucks.shop").rstrip("/"),
     "author": "Olivia Bennett",
 }
 BUILD_DATE = _dt.date.today().isoformat()

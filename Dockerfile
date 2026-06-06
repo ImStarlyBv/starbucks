@@ -20,7 +20,7 @@ COPY src ./src
 COPY data ./data
 
 # Canonical/sitemap base URL (overridable via compose build arg)
-ARG NUTRIBUCKS_SITE_URL=https://www.nutribucks.app
+ARG NUTRIBUCKS_SITE_URL=https://nutribucks.shop
 ENV NUTRIBUCKS_SITE_URL=${NUTRIBUCKS_SITE_URL}
 
 # 1) render HTML into dist/  2) compile Tailwind against the rendered output

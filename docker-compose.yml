@@ -5,9 +5,6 @@ services:
   web:
     build:
       context: .
-      # Bake the canonical/sitemap base URL into the build.
-      args:
-        NUTRIBUCKS_SITE_URL: ${NUTRIBUCKS_SITE_URL:-https://www.nutribucks.app}
     image: nutribucks:latest
     container_name: nutribucks
     expose:
