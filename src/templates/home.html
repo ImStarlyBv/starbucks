@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ page.canonical }}#webpage",
+      "url": "{{ page.canonical }}",
+      "name": "{{ page.title }}",
+      "description": "{{ page.description }}",
+      "isPartOf": { "@id": "{{ site.url }}/#website" },
+      "about": { "@id": "{{ site.url }}/#org" },
+      "dateModified": "{{ build_date }}"
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Starbucks Nutrition Calculator",
+      "url": "{{ page.canonical }}",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web",
+      "browserRequirements": "Requires JavaScript for live calculation",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": "{{ site.url }}/#author" },
+      "publisher": { "@id": "{{ site.url }}/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for f in faqs %}
+        {
+          "@type": "Question",
+          "name": {{ f.q | tojson }},
+          "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | tojson }} }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- Hero -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12">
+  <div class="relative overflow-hidden rounded-[2rem] bg-primary-container p-8 md:p-16 flex flex-col items-center text-center">
+    <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+    <h1 class="font-display-lg text-display-lg text-white mb-4 max-w-3xl">Starbucks Nutrition Calculator</h1>
+    <p class="font-body-lg text-body-lg text-on-primary-container mb-8 max-w-xl">Find the calories, sugar, protein and caffeine in any Starbucks drink or food — then customize milk, syrups and add-ons and watch your macros update live.</p>
+
+    <form class="w-full max-w-2xl relative" role="search" data-home-search data-rel="{{ rel }}" action="{{ rel }}calculator/" method="get">
+      <div class="flex items-center bg-white rounded-full p-2 search-shadow">
+        <span class="material-symbols-outlined text-outline px-4" aria-hidden="true">search</span>
+        <label for="site-search" class="sr-only">Search Starbucks drinks and food</label>
+        <input id="site-search" name="q" type="search" autocomplete="off"
+               class="flex-1 bg-transparent border-none focus:ring-0 text-on-surface font-body-md py-3 px-2"
+               placeholder="Search a drink, e.g. Caramel Macchiato…">
+        <button type="submit" class="bg-primary hover:bg-success-green text-white px-8 py-3 rounded-full font-label-md transition-all active:scale-95">Search</button>
+      </div>
+      <!-- Live results (filled by calc.js; hidden until typing). Without JS, the
+           form submits to /calculator/?q= which is fully usable. -->
+      <div data-search-results class="hidden absolute z-30 mt-2 w-full bg-white rounded-2xl shadow-xl border border-outline-variant/40 max-h-80 overflow-auto text-left"></div>
+    </form>
+  </div>
+</section>
+
+<!-- Category chips -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12" aria-label="Browse categories">
+  <div class="flex flex-wrap items-center justify-center gap-3">
+    {% for label, cat in categories.items() %}
+    <a href="{{ rel }}{{ cat.slug }}/" class="px-6 py-3 rounded-full bg-white text-on-surface-variant font-label-md border border-outline-variant flex items-center gap-2 transition-all hover:bg-surface-container-low hover:border-primary hover:text-primary active:scale-95">
+      <span class="material-symbols-outlined" aria-hidden="true">{{ cat.icon }}</span>{{ cat.title }}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Featured / popular drinks -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop" aria-labelledby="popular-h2">
+  <div class="flex items-end justify-between mb-6">
+    <h2 id="popular-h2" class="font-headline-lg text-headline-lg text-primary">Popular drinks</h2>
+    <a href="{{ rel }}calculator/" class="text-primary font-label-md hover:underline flex items-center gap-1">See all {{ drink_count }} <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
+    {% for d in featured %}{{ ui.drink_card(d, rel) }}{% endfor %}
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="mt-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+  <div class="bg-surface-container-high rounded-[2rem] p-10 md:p-12 flex flex-col md:flex-row items-center justify-between gap-10">
+    <div class="max-w-xl">
+      <h2 class="font-headline-lg text-headline-lg text-primary mb-3">Your drink, your way</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant">Don't settle for the default. Swap milk, adjust syrup pumps and add cold foam — then see calories, sugar and caffeine update in real time.</p>
+    </div>
+    <a href="{{ rel }}calculator/" class="shrink-0 bg-primary text-white px-10 py-4 rounded-full font-label-md hover:bg-success-green transition-all shadow-md active:scale-95">Open the calculator</a>
+  </div>
+</section>
+
+<!-- SEO body copy -->
+<section class="mt-20 max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop prose-nutri">
+  <h2 class="font-headline-lg text-headline-lg text-primary mb-4">About the Starbucks Nutrition Calculator</h2>
+  <div class="space-y-4 font-body-lg text-body-lg text-on-surface-variant">
+    <p>NutriBucks is a free, independent <strong>Starbucks calorie calculator</strong> covering {{ drink_count }} drinks and food items across hot coffees, cold drinks, Frappuccino® blended beverages, bakery and snacks. Every item lists real nutrition facts — calories, total fat, carbs, sugar, protein, sodium and caffeine — for each cup size from Short to Trenta.</p>
+    <p>Pick a drink to see its full nutrition table, then customize it: choose your milk, add or remove syrup pumps, drop in an extra espresso shot or top it with cold foam. The calculator adds everything up instantly, so you can hit your calorie and macro goals without giving up your favorite order.</p>
+  </div>
+  <div class="grid sm:grid-cols-2 gap-4 mt-8">
+    {% for feat in features %}
+    <div class="flex gap-3 p-4 rounded-xl bg-surface-container-low">
+      <span class="material-symbols-outlined text-primary-container" aria-hidden="true">{{ feat.icon }}</span>
+      <div>
+        <p class="font-label-md text-on-surface font-bold">{{ feat.title }}</p>
+        <p class="text-sm text-on-surface-variant">{{ feat.text }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="mt-20 max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop scroll-mt-24">
+  <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Frequently asked questions</h2>
+  {{ ui.faq_block(faqs) }}
+</section>
+
+<!-- All categories (hub) -->
+<section class="mt-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+  <h2 class="font-headline-md text-headline-md text-primary mb-6">Browse the full Starbucks menu</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+    {% for label, cat in categories.items() %}
+    <a href="{{ rel }}{{ cat.slug }}/" class="flex items-center gap-4 p-5 rounded-xl bg-white border border-accent-cream ambient-shadow lift">
+      <span class="material-symbols-outlined text-primary-container bg-surface-container-low p-3 rounded-xl" aria-hidden="true">{{ cat.icon }}</span>
+      <div>
+        <p class="font-headline-md text-primary">{{ cat.title }}</p>
+        <p class="text-sm text-on-surface-variant">{{ cat_counts[cat.slug] }} items</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
+
+{% block body_scripts %}
+<script id="search-index" type="application/json">{{ search_index | tojson }}</script>
+<script type="module" src="{{ rel }}assets/calc.js" defer></script>
+{% endblock %}

@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "{{ page.canonical }}#app",
+      "name": "Starbucks Calorie Calculator",
+      "url": "{{ page.canonical }}",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": "{{ site.url }}/#author" },
+      "publisher": { "@id": "{{ site.url }}/#org" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+        { "@type": "ListItem", "position": 2, "name": "Calculator", "item": "{{ page.canonical }}" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for f in faqs %}
+        { "@type": "Question", "name": {{ f.q | tojson }}, "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | tojson }} } }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+  {{ ui.breadcrumbs([{'name':'Home','url':rel},{'name':'Calculator'}], rel) }}
+
+  <header class="mb-10 max-w-3xl">
+    <h1 class="font-headline-lg text-headline-lg text-primary mb-2">Starbucks Calorie Calculator</h1>
+    <p class="text-on-surface-variant font-body-lg text-body-lg">Pick any of {{ drink_count }} Starbucks drinks and foods, choose your size, swap the milk, add syrups, shots or cold foam, and see calories, sugar, protein and caffeine update instantly.</p>
+  </header>
+
+  <div class="flex flex-col lg:flex-row gap-gutter" data-calculator data-rel="{{ rel }}">
+    <!-- Picker (links work without JS; JS loads the drink in-page) -->
+    <aside class="w-full lg:w-80 shrink-0" aria-label="Choose a drink">
+      <div class="lg:sticky lg:top-24 space-y-4">
+        <div class="flex items-center bg-white border border-outline-variant rounded-full px-3 py-2">
+          <span class="material-symbols-outlined text-outline text-base" aria-hidden="true">search</span>
+          <label for="calc-search" class="sr-only">Search drinks</label>
+          <input id="calc-search" type="search" data-picker-search autocomplete="off" placeholder="Search drinks…" class="bg-transparent border-none focus:ring-0 text-sm w-full ml-2">
+        </div>
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Filter by category">
+          <button type="button" data-picker-cat="all" class="picker-cat px-3 py-1.5 rounded-full border-2 border-primary bg-primary-fixed-dim text-on-primary-fixed text-sm font-label-md">All</button>
+          {% for label, cat in categories.items() %}
+          <button type="button" data-picker-cat="{{ cat.slug }}" class="picker-cat px-3 py-1.5 rounded-full border border-outline-variant bg-white text-on-surface-variant text-sm font-label-md hover:border-primary">{{ cat.title }}</button>
+          {% endfor %}
+        </div>
+        <ul class="bg-white rounded-2xl border border-outline-variant/40 max-h-[28rem] overflow-auto divide-y divide-outline-variant/30" data-picker-list>
+          {% for d in all_drinks %}
+          <li data-name="{{ d.name|lower }}" data-cat="{{ d.category }}">
+            <a href="{{ rel }}drink/{{ d.slug }}/" data-slug="{{ d.slug }}"
+               class="flex items-center justify-between gap-2 px-4 py-2.5 hover:bg-surface-container-low transition-colors">
+              <span class="text-sm text-on-surface">{{ d.name }}</span>
+              <span class="text-caption text-outline whitespace-nowrap">{{ d.base[d.default_size].calories }} kcal</span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Calculator panel (built by calc.js). Fallback content for no-JS. -->
+    <div class="flex-1 min-w-0">
+      <div data-calc-panel class="rounded-[2rem] border border-outline-variant/40 bg-white p-8">
+        <div data-calc-empty class="text-center py-16">
+          <span class="material-symbols-outlined text-primary-container" style="font-size:48px" aria-hidden="true">touch_app</span>
+          <p class="font-headline-md text-primary mt-4">Choose a drink to start</p>
+          <p class="text-on-surface-variant mt-1">Pick from the list, or <a href="{{ rel }}" class="text-primary underline">browse popular drinks</a>. Each drink also has its own page with a full nutrition table.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEO copy -->
+  <section class="mt-20 max-w-3xl prose-nutri">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-4">How the calculator works</h2>
+    <div class="space-y-4 font-body-lg text-body-lg text-on-surface-variant">
+      <p>NutriBucks starts from the real published nutrition for each Starbucks drink at each size, then adds the estimated impact of your customizations. Swapping milk, adding syrup pumps, dropping in an extra espresso shot or topping with cold foam each adjusts the running totals for calories, fat, carbs, sugar, protein and caffeine.</p>
+      <p>Customization values are estimates applied on top of the official base nutrition, so treat the total as a close guide rather than an exact label. For the verified base numbers, see each drink's own nutrition page.</p>
+    </div>
+  </section>
+
+  <section id="faq" class="mt-16 max-w-3xl scroll-mt-24">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Calculator FAQ</h2>
+    {{ ui.faq_block(faqs) }}
+  </section>
+
+  <section class="mt-16">
+    <h2 class="font-headline-md text-headline-md text-primary mb-6">Browse by category</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+      {% for label, cat in categories.items() %}
+      <a href="{{ rel }}{{ cat.slug }}/" class="flex items-center gap-4 p-5 rounded-xl bg-white border border-accent-cream ambient-shadow lift">
+        <span class="material-symbols-outlined text-primary-container bg-surface-container-low p-3 rounded-xl" aria-hidden="true">{{ cat.icon }}</span>
+        <div><p class="font-headline-md text-primary">{{ cat.title }}</p><p class="text-sm text-on-surface-variant">{{ cat_counts[cat.slug] }} items</p></div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+{% endblock %}
+
+{% block body_scripts %}
+<script type="module" src="{{ rel }}assets/calc.js" defer></script>
+{% endblock %}

@@ -1,0 +1,15 @@
+# NutriBucks — one service, ONE exposed port (host 8080 -> nginx 80).
+# Build:  docker compose up --build
+# Open:   http://localhost:8080
+services:
+  web:
+    build:
+      context: .
+      # Bake the canonical/sitemap base URL into the build.
+      args:
+        NUTRIBUCKS_SITE_URL: ${NUTRIBUCKS_SITE_URL:-https://www.nutribucks.app}
+    image: nutribucks:latest
+    container_name: nutribucks
+    ports:
+      - "8080:80"   # the only port exposed
+    restart: unless-stopped

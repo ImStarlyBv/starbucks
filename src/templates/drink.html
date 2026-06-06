@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% set b = d.base[d.default_size] %}
+
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ page.canonical }}#webpage",
+      "url": "{{ page.canonical }}",
+      "name": "{{ page.title }}",
+      "description": "{{ page.description }}",
+      "isPartOf": { "@id": "{{ site.url }}/#website" },
+      "dateModified": "{{ build_date }}",
+      "author": { "@id": "{{ site.url }}/#author" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+        { "@type": "ListItem", "position": 2, "name": {{ d.category_label | tojson }}, "item": "{{ site.url }}/{{ d.category }}/" },
+        { "@type": "ListItem", "position": 3, "name": {{ d.name | tojson }}, "item": "{{ page.canonical }}" }
+      ]
+    },
+    {
+      "@type": "MenuItem",
+      "name": {{ d.name | tojson }},
+      "description": {{ d.desc | tojson }},
+      "url": "{{ page.canonical }}",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": {{ d.default_size | tojson }},
+        "calories": "{{ b.calories }} cal",
+        "fatContent": "{{ b.fat }} g",
+        "saturatedFatContent": "{{ b.sat_fat }} g",
+        "carbohydrateContent": "{{ b.carbs }} g",
+        "sugarContent": "{{ b.sugar }} g",
+        "proteinContent": "{{ b.protein }} g",
+        "sodiumContent": "{{ b.sodium }} mg",
+        "fiberContent": "{{ b.fiber }} g"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for f in faqs %}
+        { "@type": "Question", "name": {{ f.q | tojson }}, "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | tojson }} } }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+  {{ ui.breadcrumbs([{'name':'Home','url':rel},{'name':d.category_label,'url':rel ~ d.category ~ '/'},{'name':d.name}], rel) }}
+
+  <div class="flex flex-col lg:flex-row gap-12 items-start">
+    <!-- Left: visual + live highlights -->
+    <div class="w-full lg:w-1/2 lg:sticky lg:top-24">
+      <div class="relative aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden">
+        {{ ui.tile(d.category, 'w-full h-full') }}
+        <div class="absolute bottom-6 left-6 right-6 flex justify-between gap-4">
+          <div class="glass-card px-5 py-3 rounded-2xl">
+            <p class="font-caption text-caption text-secondary uppercase tracking-wider">Caffeine</p>
+            <p class="font-headline-md text-headline-md text-primary"><span data-out="caffeine">{{ b.caffeine }}</span>mg</p>
+          </div>
+          <div class="glass-card px-5 py-3 rounded-2xl">
+            <p class="font-caption text-caption text-secondary uppercase tracking-wider">Estimated</p>
+            <p class="font-headline-md text-headline-md text-primary"><span data-out="calories">{{ b.calories }}</span> kcal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: title + (interactive) controls + nutrition -->
+    <div class="w-full lg:w-1/2 space-y-10">
+      <header>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-caption font-semibold uppercase tracking-wider text-secondary">{{ d.category_label }}{% if d.group %} · {{ d.group }}{% endif %}</span>
+          {% if d.is_new %}<span class="bg-tertiary text-white px-2 py-0.5 rounded-full text-caption font-semibold">New</span>{% endif %}
+        </div>
+        <h1 class="font-headline-lg text-headline-lg text-on-surface mb-2">{{ d.name }}</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">{{ d.desc }}</p>
+      </header>
+
+      {% if not d.is_food %}
+      <!-- Size -->
+      <section class="space-y-4" aria-labelledby="size-h">
+        <div class="flex items-center justify-between">
+          <h2 id="size-h" class="font-label-md text-label-md text-primary uppercase tracking-widest">Select size</h2>
+          <span class="text-caption text-secondary" data-size-label>{{ d.default_size }}</span>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" role="group" aria-label="Size">
+          {% for s in d.sizes %}
+          <button type="button" data-size="{{ s }}"
+            class="size-btn p-3 rounded-xl border bg-surface-container-lowest hover:border-primary transition-all flex flex-col items-center gap-1
+            {% if s == d.default_size %}border-2 border-primary bg-primary-fixed-dim text-on-primary-fixed{% else %}border-outline-variant{% endif %}">
+            <span class="material-symbols-outlined" aria-hidden="true">local_cafe</span>
+            <span class="font-label-md text-center leading-tight">{{ s.split('(')[0] }}</span>
+          </button>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- Milk -->
+      <section class="space-y-4" aria-labelledby="milk-h">
+        <h2 id="milk-h" class="font-label-md text-label-md text-primary uppercase tracking-widest">Milk</h2>
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Milk">
+          {% for m in milk_choices %}
+          <button type="button" data-milk="{{ m }}"
+            class="milk-btn px-4 py-2 rounded-full border font-label-md text-sm transition-all active:scale-95
+            {% if m == d.default_milk %}border-2 border-primary bg-primary-fixed-dim text-on-primary-fixed{% else %}border-outline-variant bg-surface-container-lowest hover:border-primary{% endif %}">{{ m.split('(')[0] }}</button>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- Add-ons -->
+      <section class="space-y-3" aria-labelledby="addon-h">
+        <h2 id="addon-h" class="font-label-md text-label-md text-primary uppercase tracking-widest">Customize</h2>
+        {% for ctl in [
+            {'k':'syrup','label':'Flavored syrup','sub':'~20 kcal per pump (estimated)'},
+            {'k':'shot','label':'Extra espresso shot','sub':'+5 kcal, +75 mg caffeine each'}
+        ] %}
+        <div class="flex items-center justify-between p-4 bg-surface-container rounded-xl">
+          <div>
+            <p class="font-label-md text-on-surface">{{ ctl.label }}</p>
+            <p class="text-caption text-secondary">{{ ctl.sub }}</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <button type="button" data-step="{{ ctl.k }}" data-dir="-1" aria-label="Decrease {{ ctl.label }}" class="w-8 h-8 rounded-full border border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors">−</button>
+            <span class="font-headline-md w-6 text-center" data-count="{{ ctl.k }}">0</span>
+            <button type="button" data-step="{{ ctl.k }}" data-dir="1" aria-label="Increase {{ ctl.label }}" class="w-8 h-8 rounded-full border border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors">+</button>
+          </div>
+        </div>
+        {% endfor %}
+        <div class="flex flex-wrap gap-2 pt-1">
+          <button type="button" data-toggle="Whipped Cream" class="addon-btn px-4 py-2 rounded-full border border-outline-variant bg-surface-container-lowest font-label-md text-sm hover:border-primary transition-all active:scale-95">+ Whipped cream</button>
+          <button type="button" data-toggle="Cold Foam" class="addon-btn px-4 py-2 rounded-full border border-outline-variant bg-surface-container-lowest font-label-md text-sm hover:border-primary transition-all active:scale-95">+ Cold foam</button>
+        </div>
+      </section>
+      {% endif %}
+
+      <!-- Live nutritional panel (pre-rendered with default values) -->
+      <section class="bg-primary-container p-8 rounded-[2rem] text-on-primary-container shadow-xl" aria-label="Nutrition summary">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="font-headline-md text-headline-md text-on-primary-container">Nutritional profile</h2>
+          <span class="material-symbols-outlined text-primary-fixed" aria-hidden="true">nutrition</span>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {% for it in [
+              {'k':'calories','label':'Calories','unit':'','max':500},
+              {'k':'fat','label':'Total fat','unit':'g','max':30},
+              {'k':'sugar','label':'Sugar','unit':'g','max':60},
+              {'k':'caffeine','label':'Caffeine','unit':'mg','max':400}
+          ] %}
+          <div class="space-y-1">
+            <p class="text-caption opacity-80 uppercase font-semibold">{{ it.label }}</p>
+            <p class="font-headline-md text-headline-md"><span data-out="{{ it.k }}">{{ b[it.k] }}</span>{{ it.unit }}</p>
+            <div class="h-1 bg-on-primary-container/20 rounded-full overflow-hidden">
+              <div class="h-full bg-primary-fixed rounded-full transition-all duration-500" data-bar="{{ it.k }}" data-max="{{ it.max }}" style="width:{{ ((b[it.k]/it.max*100) if b[it.k] < it.max else 100) }}%"></div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <p class="text-caption opacity-80 mt-6">Estimated values · not affiliated with Starbucks. Customization deltas are approximate.</p>
+      </section>
+
+      <!-- Full per-size nutrition table (the crawlable SEO core) -->
+      <section aria-labelledby="table-h">
+        <h2 id="table-h" class="font-headline-md text-headline-md text-primary mb-4">{{ d.name }} nutrition facts by size</h2>
+        <div class="overflow-x-auto rounded-xl border border-outline-variant/50">
+          <table class="w-full text-sm border-collapse bg-white">
+            <caption class="sr-only">Nutrition facts for {{ d.name }} by size</caption>
+            <thead>
+              <tr class="bg-surface-container-high text-left">
+                <th scope="col" class="p-3 font-label-md text-primary">Nutrient</th>
+                {% for s in d.sizes %}<th scope="col" class="p-3 font-label-md text-primary whitespace-nowrap">{{ s }}</th>{% endfor %}
+              </tr>
+            </thead>
+            <tbody>
+              {% for field, label, unit in macro_fields %}
+              <tr class="border-t border-outline-variant/40 {{ 'bg-surface-container-low/40' if loop.index is odd }}">
+                <th scope="row" class="p-3 text-left font-semibold text-on-surface-variant whitespace-nowrap">{{ label }}</th>
+                {% for s in d.sizes %}<td class="p-3 text-on-surface">{{ d.base[s][field] }}{{ unit }}</td>{% endfor %}
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <p class="text-caption text-outline mt-2">Source values are estimates compiled for informational use; verify against official Starbucks nutrition before relying on them.</p>
+      </section>
+
+      <!-- FAQ -->
+      <section aria-labelledby="drink-faq-h">
+        <h2 id="drink-faq-h" class="font-headline-md text-headline-md text-primary mb-4">{{ d.name }} — FAQ</h2>
+        {{ ui.faq_block(faqs) }}
+      </section>
+    </div>
+  </div>
+
+  <!-- Related drinks -->
+  {% if related %}
+  <section class="mt-20" aria-labelledby="related-h">
+    <h2 id="related-h" class="font-headline-lg text-headline-lg text-primary mb-6">More {{ d.category_label }}</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
+      {% for r in related %}{{ ui.drink_card(r, rel) }}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block body_scripts %}
+<script id="drink-data" type="application/json">{{ drink_payload | tojson }}</script>
+<script type="module" src="{{ rel }}assets/calc.js" defer></script>
+{% endblock %}

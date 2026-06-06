@@ -1,0 +1,68 @@
+{# Reusable UI fragments. No external images: each drink gets a category-tinted
+   icon tile (Material Symbol), so there are zero image requests -> great LCP/CLS. #}
+
+{% macro cat_icon(category) -%}
+{%- set icons = {'hot':'local_cafe','cold':'local_bar','frappuccino':'icecream','food':'lunch_dining','bakery':'bakery_dining','snacks':'cookie'} -%}
+{{ icons.get(category, 'local_cafe') }}
+{%- endmacro %}
+
+{# Visual tile standing in for a product photo. aria-hidden: decorative. #}
+{% macro tile(category, classes='') -%}
+<div class="relative flex items-center justify-center bg-gradient-to-br from-primary-container to-primary {{ classes }}" aria-hidden="true">
+  <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+  <span class="material-symbols-outlined text-primary-fixed" style="font-size: 64px;">{{ cat_icon(category) }}</span>
+</div>
+{%- endmacro %}
+
+{# Standard drink card used on home + category grids. d = drink dict. #}
+{% macro drink_card(d, rel) -%}
+{%- set b = d.base[d.default_size] -%}
+<a href="{{ rel }}drink/{{ d.slug }}/"
+   class="glass-card rounded-xl overflow-hidden group lift block focus:outline-none focus:ring-2 focus:ring-primary"
+   data-name="{{ d.name|lower }}" data-cat="{{ d.category }}" data-cal="{{ b.calories }}" data-new="{{ 1 if d.is_new else 0 }}">
+  <div class="relative h-40 overflow-hidden">
+    {{ tile(d.category, 'w-full h-full') }}
+    <span class="absolute top-3 right-3 bg-white/95 text-primary-container px-3 py-1 rounded-full font-label-md text-label-md shadow-sm">{{ b.calories }} kcal</span>
+    {% if d.is_new %}<span class="absolute top-3 left-3 bg-tertiary text-white px-2 py-1 rounded-full text-caption font-semibold">New</span>{% endif %}
+  </div>
+  <div class="p-5">
+    <h3 class="font-headline-md text-headline-md text-primary mb-1 leading-tight">{{ d.name }}</h3>
+    <p class="font-body-md text-on-surface-variant text-sm mb-4 line-clamp-2">{{ d.desc }}</p>
+    <div class="flex items-center justify-between pt-3 border-t border-outline-variant/30">
+      <span class="text-success-green font-bold text-sm">
+        {% if d.is_food %}{{ b.protein }}g protein{% else %}{{ b.sugar }}g sugar · {{ b.protein }}g protein{% endif %}
+      </span>
+      <span class="text-primary font-label-md text-sm flex items-center gap-1">View
+        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+{%- endmacro %}
+
+{# Breadcrumb trail (visual). BreadcrumbList JSON-LD is emitted separately. #}
+{% macro breadcrumbs(crumbs, rel) -%}
+<nav aria-label="Breadcrumb" class="mb-6">
+  <ol class="flex flex-wrap items-center gap-1 text-sm text-on-surface-variant">
+    {% for c in crumbs %}
+    <li class="flex items-center gap-1">
+      {% if c.url %}<a href="{{ c.url }}" class="hover:text-primary transition-colors">{{ c.name }}</a>
+      {% else %}<span class="text-primary font-semibold" aria-current="page">{{ c.name }}</span>{% endif %}
+      {% if not loop.last %}<span class="material-symbols-outlined text-base text-outline" aria-hidden="true">chevron_right</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</nav>
+{%- endmacro %}
+
+{# FAQ accordion: native <details> => crawlable, Find-in-page, no JS needed. #}
+{% macro faq_block(faqs) -%}
+<div class="space-y-3">
+  {% for f in faqs %}
+  <details class="disclosure"{% if loop.first %} open{% endif %}>
+    <summary>{{ f.q }}</summary>
+    <div><p>{{ f.a }}</p></div>
+  </details>
+  {% endfor %}
+</div>
+{%- endmacro %}

@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "{{ page.canonical }}#webpage",
+      "url": "{{ page.canonical }}",
+      "name": "{{ page.title }}",
+      "description": "{{ page.description }}",
+      "isPartOf": { "@id": "{{ site.url }}/#website" },
+      "dateModified": "{{ build_date }}"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+        { "@type": "ListItem", "position": 2, "name": {{ cat.title | tojson }}, "item": "{{ page.canonical }}" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": {{ cat.title | tojson }},
+      "numberOfItems": {{ drinks|length }},
+      "itemListElement": [
+        {% for d in drinks %}
+        { "@type": "ListItem", "position": {{ loop.index }}, "name": {{ d.name | tojson }}, "url": "{{ site.url }}/drink/{{ d.slug }}/" }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+  {{ ui.breadcrumbs([{'name':'Home','url':rel},{'name':cat.title}], rel) }}
+
+  <header class="mb-10">
+    <h1 class="font-headline-lg text-headline-lg text-primary mb-2 flex items-center gap-3">
+      <span class="material-symbols-outlined text-primary-container" aria-hidden="true">{{ cat.icon }}</span>{{ cat.title }}
+    </h1>
+    <p class="text-on-surface-variant font-body-lg text-body-lg max-w-2xl">{{ cat.blurb }} Showing {{ drinks|length }} items, all calories shown for {{ size_note }}.</p>
+  </header>
+
+  <div class="flex flex-col md:flex-row gap-gutter" data-filter-scope>
+    <!-- Filter sidebar (progressive enhancement over the full rendered list) -->
+    <aside class="w-full md:w-64 space-y-8 h-fit md:sticky md:top-24" aria-label="Filter {{ cat.title }}">
+      <div>
+        <label for="cat-search" class="font-label-md text-label-md text-primary uppercase tracking-wider mb-3 block">Search</label>
+        <div class="flex items-center bg-white border border-outline-variant rounded-full px-3 py-2">
+          <span class="material-symbols-outlined text-outline text-base" aria-hidden="true">search</span>
+          <input id="cat-search" type="search" data-filter-search placeholder="Filter {{ cat.title|lower }}…" class="bg-transparent border-none focus:ring-0 text-sm w-full ml-2">
+        </div>
+      </div>
+      <div>
+        <label for="cal-max" class="font-label-md text-label-md text-primary uppercase tracking-wider mb-3 block">Max calories: <span data-cal-out>{{ cal_max }}</span></label>
+        <input id="cal-max" type="range" min="0" max="{{ cal_max }}" value="{{ cal_max }}" step="10" data-filter-cal class="w-full accent-primary-container">
+      </div>
+      <div>
+        <span class="font-label-md text-label-md text-primary uppercase tracking-wider mb-3 block">Sort by</span>
+        <select data-filter-sort class="w-full rounded-lg border-outline-variant text-sm focus:ring-primary focus:border-primary">
+          <option value="name">Name (A–Z)</option>
+          <option value="cal-asc">Calories (low → high)</option>
+          <option value="cal-desc">Calories (high → low)</option>
+        </select>
+      </div>
+      <label class="flex items-center gap-3 cursor-pointer group">
+        <input type="checkbox" data-filter-new class="w-5 h-5 rounded border-outline text-primary-container focus:ring-primary">
+        <span class="font-body-md text-body-md text-on-surface-variant group-hover:text-primary transition-colors">New items only</span>
+      </label>
+      <p class="text-caption text-outline" data-filter-count></p>
+    </aside>
+
+    <!-- Listing grid -->
+    <div class="flex-1">
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-gutter" data-filter-grid>
+        {% for d in drinks %}<div class="cv-auto">{{ ui.drink_card(d, rel) }}</div>{% endfor %}
+      </div>
+      <p data-filter-empty class="hidden text-center text-on-surface-variant py-16">No items match those filters.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block body_scripts %}
+<script type="module" src="{{ rel }}assets/calc.js" defer></script>
+{% endblock %}

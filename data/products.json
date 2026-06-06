@@ -1,0 +1,1834 @@
+{
+ "Hot": [
+  {
+   "name": "Americanos",
+   "is_new": false
+  },
+  {
+   "name": "    Americano Misto",
+   "is_new": false
+  },
+  {
+   "name": "    Brown Sugar Oat Americano",
+   "is_new": false
+  },
+  {
+   "name": "    Caffè Americano",
+   "is_new": false
+  },
+  {
+   "name": "Brewed Coffees",
+   "is_new": false
+  },
+  {
+   "name": "    Blonde Roast - Sunsera",
+   "is_new": false
+  },
+  {
+   "name": "    Blonde Roast - Veranda Blend®",
+   "is_new": false
+  },
+  {
+   "name": "    Caffè Misto",
+   "is_new": false
+  },
+  {
+   "name": "    Caffè Verona® Clover Vertica™",
+   "is_new": false
+  },
+  {
+   "name": "    Clover Vertica Christmas Blend",
+   "is_new": false
+  },
+  {
+   "name": "    Clover® Malawi Sable Farms Starbucks Reserve®",
+   "is_new": false
+  },
+  {
+   "name": "    Clover® Starbucks Reserve® Vietnam Da Lat",
+   "is_new": false
+  },
+  {
+   "name": "    Featured Dark Roast",
+   "is_new": false
+  },
+  {
+   "name": "    Featured Dark Roast Caffè Verona®",
+   "is_new": false
+  },
+  {
+   "name": "    Featured Decaf Roast Decaf Pike Place® Roast",
+   "is_new": false
+  },
+  {
+   "name": "    Featured Medium Roast Pike Place® Roast",
+   "is_new": false
+  },
+  {
+   "name": "    Medium Roast - Guatemala Casi Cielo®",
+   "is_new": false
+  },
+  {
+   "name": "    Single-Origin Ethiopia",
+   "is_new": false
+  },
+  {
+   "name": "    Starbucks Reserve® Christmas 2023 Clover®",
+   "is_new": false
+  },
+  {
+   "name": "    Starbucks Reserve® Christmas 2024 Clover Vertica",
+   "is_new": false
+  },
+  {
+   "name": "    Starbucks® Christmas Blonde Roast Clover Vertica™ Brewed Coffee",
+   "is_new": false
+  },
+  {
+   "name": "    Veranda Blend® Clover Vertica™",
+   "is_new": false
+  },
+  {
+   "name": "Cappuccinos",
+   "is_new": false
+  },
+  {
+   "name": "    Cappuccino",
+   "is_new": false
+  },
+  {
+   "name": "Cortados",
+   "is_new": false
+  },
+  {
+   "name": "    Brown Sugar Oatmilk Cortado",
+   "is_new": false
+  },
+  {
+   "name": "    Cortado",
+   "is_new": false
+  },
+  {
+   "name": "    Pecan Oatmilk Cortado",
+   "is_new": false
+  },
+  {
+   "name": "    Pistachio Cortado",
+   "is_new": false
+  },
+  {
+   "name": "Espresso Shots",
+   "is_new": false
+  },
+  {
+   "name": "    Espresso",
+   "is_new": false
+  },
+  {
+   "name": "    Espresso Con Panna",
+   "is_new": false
+  },
+  {
+   "name": "Flat White",
+   "is_new": false
+  },
+  {
+   "name": "    Flat White",
+   "is_new": false
+  },
+  {
+   "name": "    Honey Almondmilk Flat White",
+   "is_new": false
+  },
+  {
+   "name": "High Protein Lattes",
+   "is_new": false
+  },
+  {
+   "name": "    Caramel Protein Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Caramel Protein Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Protein Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Vanilla Protein Latte",
+   "is_new": false
+  },
+  {
+   "name": "High Protein Lattes(SF)",
+   "is_new": false
+  },
+  {
+   "name": "    Sugar-Free Caramel Protein Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Sugar-Free Caramel Protein Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Sugar-Free Vanilla Protein Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Sugar-Free Vanilla Protein Matcha",
+   "is_new": false
+  },
+  {
+   "name": "Lattes",
+   "is_new": false
+  },
+  {
+   "name": "    Caffè Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Caramel Brulée Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Chestnut Praline Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Chocolatey Mousse Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Cinnamon Dolce Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Eggnog Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Gingerbread Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Gingerbread Matcha Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Lavender Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Oleato™ Caffé Latte with Oatmilk",
+   "is_new": false
+  },
+  {
+   "name": "    Pecan Crunch Oatmilk Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Pistachio Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Pumpkin Spice Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Starbucks® Blonde Vanilla Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Sugar Cookie Almondmilk Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Sugar Cookie Breve",
+   "is_new": false
+  },
+  {
+   "name": "    Sugar Cookie Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Toasted Coconut Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Toffee Nut Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Toffee Nut Matcha Latte",
+   "is_new": false
+  },
+  {
+   "name": "Macchiatos",
+   "is_new": false
+  },
+  {
+   "name": "    Apple Crisp Oatmilk Macchiato",
+   "is_new": false
+  },
+  {
+   "name": "    Caramel Macchiato",
+   "is_new": false
+  },
+  {
+   "name": "    Espresso Macchiato",
+   "is_new": false
+  },
+  {
+   "name": "Mochas",
+   "is_new": false
+  },
+  {
+   "name": "    Caffè Mocha",
+   "is_new": false
+  },
+  {
+   "name": "    Peppermint Mocha",
+   "is_new": false
+  },
+  {
+   "name": "    Peppermint White Chocolate Mocha",
+   "is_new": false
+  },
+  {
+   "name": "    White Chocolate Mocha",
+   "is_new": false
+  },
+  {
+   "name": "Hot Chocolates",
+   "is_new": false
+  },
+  {
+   "name": "    Hot Chocolate",
+   "is_new": false
+  },
+  {
+   "name": "    Peppermint Hot Chocolate",
+   "is_new": false
+  },
+  {
+   "name": "    Peppermint White Hot Chocolate",
+   "is_new": false
+  },
+  {
+   "name": "    White Hot Chocolate",
+   "is_new": false
+  },
+  {
+   "name": "Juice",
+   "is_new": false
+  },
+  {
+   "name": "    Caramel Apple Spice",
+   "is_new": false
+  },
+  {
+   "name": "    Steamed Apple Juice",
+   "is_new": false
+  },
+  {
+   "name": "Steamers",
+   "is_new": false
+  },
+  {
+   "name": "    Caramel Brulée Crème",
+   "is_new": false
+  },
+  {
+   "name": "    Chestnut Praline Crème",
+   "is_new": false
+  },
+  {
+   "name": "    Pistachio Crème",
+   "is_new": false
+  },
+  {
+   "name": "    Pumpkin Spice Crème",
+   "is_new": false
+  },
+  {
+   "name": "    Steamed Milk",
+   "is_new": false
+  },
+  {
+   "name": "    Vanilla Crème",
+   "is_new": false
+  },
+  {
+   "name": "Black Teas",
+   "is_new": false
+  },
+  {
+   "name": "    Earl Grey Tea",
+   "is_new": false
+  },
+  {
+   "name": "    London Fog Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Royal English Breakfast Tea",
+   "is_new": false
+  },
+  {
+   "name": "    Royal English Breakfast Tea Latte",
+   "is_new": false
+  },
+  {
+   "name": "Chai Teas",
+   "is_new": false
+  },
+  {
+   "name": "    Chai Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Chai Tea",
+   "is_new": false
+  },
+  {
+   "name": "    Gingerbread Chai",
+   "is_new": false
+  },
+  {
+   "name": "    Gingerbread Oatmilk Chai",
+   "is_new": false
+  },
+  {
+   "name": "Green Teas",
+   "is_new": false
+  },
+  {
+   "name": "    Chamomile Mint Blossom",
+   "is_new": false
+  },
+  {
+   "name": "    Emperor’s Clouds &amp; Mist®",
+   "is_new": false
+  },
+  {
+   "name": "    Honey Citrus Mint Tea",
+   "is_new": false
+  },
+  {
+   "name": "    Jade Citrus Mint® Brewed Tea",
+   "is_new": false
+  },
+  {
+   "name": "    Matcha Latte",
+   "is_new": false
+  },
+  {
+   "name": "Herbal Teas",
+   "is_new": false
+  },
+  {
+   "name": "    Mint Majesty®",
+   "is_new": false
+  }
+ ],
+ "Cold": [
+  {
+   "name": "Cold Brews",
+   "is_new": false
+  },
+  {
+   "name": "    Chocolate Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Chocolate Hazelnut Cookie Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Cinnamon Caramel Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Cold Brew with Nondairy Vanilla Sweet Cream Cold Foam",
+   "is_new": false
+  },
+  {
+   "name": "    Elphaba’s Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Nondairy Chocolate Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Nondairy Salted Caramel Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Nondairy Vanilla Sweet Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Oleato Golden Foam™ Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Pistachio Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Pumpkin Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Raspberry Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Salted Caramel Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Salted Pecan Crunch Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Starbucks Reserve® Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Starbucks® Cold Brew Coffee",
+   "is_new": false
+  },
+  {
+   "name": "    Starbucks® Cold Brew Coffee with Milk",
+   "is_new": false
+  },
+  {
+   "name": "    Toasted Coconut Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Vanilla Sweet Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    White Chocolate Strawberry Cream Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "High Protein Lattes",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Caramel Protein Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Caramel Protein Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Protein Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Vanilla Protein Latte",
+   "is_new": false
+  },
+  {
+   "name": "High Protein Lattes(SF)",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Sugar-Free Caramel Protein Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Sugar-Free Caramel Protein Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Sugar-Free Vanilla Protein Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Sugar-Free Vanilla Protein Matcha",
+   "is_new": false
+  },
+  {
+   "name": "Iced Americano",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Caffè Americano",
+   "is_new": false
+  },
+  {
+   "name": "Iced Coffees",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Coffee",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Coffee Clover Vertica™",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Coffee with Milk",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Espresso",
+   "is_new": false
+  },
+  {
+   "name": "Iced Flat Whites",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Flat White",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Honey Almondmilk Flat White",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Honey Apple Almondmilk Flat White",
+   "is_new": false
+  },
+  {
+   "name": "Iced Lattes",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Caffè Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Caramel Apple Cream Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Caramel Brulée Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Chestnut Praline Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Chocolatey Mousse Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Cinnamon Dolce Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Eggnog Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Gingerbread Cream Matcha Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Gingerbread Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Lavender Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Pecan Crunch Oatmilk Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Pistachio Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Pumpkin Spice Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Starbucks® Blonde Vanilla Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Sugar Cookie Almondmilk Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Sugar Cookie Breve",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Sugar Cookie Cream Matcha Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Sugar Cookie Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Toasted Coconut Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Toffee Nut Cream Matcha Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Toffee Nut Latte",
+   "is_new": false
+  },
+  {
+   "name": "Iced Macchiatos",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Apple Crisp Oatmilk Macchiato",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Caramel Macchiato",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Ube Coconut Macchiato",
+   "is_new": false
+  },
+  {
+   "name": "Iced Mochas",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Caffè Mocha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Dubai Chocolate Mocha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Peppermint Mocha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Peppermint White Chocolate Mocha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced White Chocolate Mocha",
+   "is_new": false
+  },
+  {
+   "name": "Iced Shaken Espresso",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Apple Crisp Oatmilk Shaken Espresso",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Brown Sugar Oatmilk Shaken Espresso",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Hazelnut Oatmilk Shaken Espresso",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Horchata Oatmilk Shaken Espresso",
+   "is_new": true
+  },
+  {
+   "name": "    Iced Shaken Espresso",
+   "is_new": false
+  },
+  {
+   "name": "    Oleato™ Iced Shaken Espresso with Oatmilk and Toffeenut",
+   "is_new": false
+  },
+  {
+   "name": "Nitro Cold Brews",
+   "is_new": false
+  },
+  {
+   "name": "    Cinnamon Caramel Cream Nitro Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Nitro Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Vanilla Sweet Cream Nitro Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "Protein Cold Foam Drinks",
+   "is_new": false
+  },
+  {
+   "name": "    Chocolate Cream Protein Cold Brew",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Banana Cream Protein Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Brown Sugar Cream Protein Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Vanilla Cream Protein Latte",
+   "is_new": false
+  },
+  {
+   "name": "Juice",
+   "is_new": false
+  },
+  {
+   "name": "    Blended Strawberry Lemonade",
+   "is_new": false
+  },
+  {
+   "name": "    Evolution Fresh® Orange",
+   "is_new": false
+  },
+  {
+   "name": "    Evolution Fresh® Organic Defense Up®",
+   "is_new": false
+  },
+  {
+   "name": "    Evolution Fresh® Organic Super Fruit Greens",
+   "is_new": false
+  },
+  {
+   "name": "    Lemonade",
+   "is_new": false
+  },
+  {
+   "name": "    Starbucks™ Baya Energy Mango Guava",
+   "is_new": false
+  },
+  {
+   "name": "    Starbucks™ Baya Energy Raspberry Lime",
+   "is_new": false
+  },
+  {
+   "name": "    Tree Top Apple Juice Box",
+   "is_new": false
+  },
+  {
+   "name": "Milk",
+   "is_new": false
+  },
+  {
+   "name": "    Cold Milk",
+   "is_new": false
+  },
+  {
+   "name": "    Koia® Cacao Bean Protein Shake",
+   "is_new": false
+  },
+  {
+   "name": "    Koia® Vanilla Bean Protein Shake",
+   "is_new": false
+  },
+  {
+   "name": "Sparkling Water",
+   "is_new": false
+  },
+  {
+   "name": "    Spindrift® Grapefruit Sparkling Water",
+   "is_new": false
+  },
+  {
+   "name": "    Spindrift® Raspberry Lime Sparkling Water",
+   "is_new": false
+  },
+  {
+   "name": "Starbucks Refreshers™",
+   "is_new": false
+  },
+  {
+   "name": "    Blackberry Sage Lemonade Refresher",
+   "is_new": false
+  },
+  {
+   "name": "    Blackberry Sage Refresher",
+   "is_new": false
+  },
+  {
+   "name": "    Butterfly Drink",
+   "is_new": true
+  },
+  {
+   "name": "    Cran-Merry Drink",
+   "is_new": false
+  },
+  {
+   "name": "    Cran-Merry Orange Lemonade Refresher",
+   "is_new": false
+  },
+  {
+   "name": "    Cran-Merry Orange Refresher",
+   "is_new": false
+  },
+  {
+   "name": "    Dragon Drink® Starbucks Refreshers® Beverage",
+   "is_new": false
+  },
+  {
+   "name": "    Frozen Mango Dragonfruit Lemonade Starbucks Refreshers® Beverage",
+   "is_new": false
+  },
+  {
+   "name": "    Frozen Pineapple Passionfruit Lemonade Starbucks Refreshers® Beverage",
+   "is_new": false
+  },
+  {
+   "name": "    Frozen Strawberry Açaí Lemonade Starbucks Refreshers® Beverage",
+   "is_new": false
+  },
+  {
+   "name": "    Glinda’s Pink Potion",
+   "is_new": false
+  },
+  {
+   "name": "    Mango Dragonfruit Starbucks Refreshers® Beverage",
+   "is_new": false
+  },
+  {
+   "name": "    Mango Dream Energy Drink",
+   "is_new": false
+  },
+  {
+   "name": "    Mango Strawberry Energy Refresher",
+   "is_new": false
+  },
+  {
+   "name": "    Mango Strawberry Lemonade Energy Refresher",
+   "is_new": false
+  },
+  {
+   "name": "    Midnight Drink",
+   "is_new": false
+  },
+  {
+   "name": "    Paradise Drink Starbucks Refreshers® Beverage",
+   "is_new": false
+  },
+  {
+   "name": "    Pineapple Passionfruit Lemonade Starbucks Refreshers® Beverage",
+   "is_new": false
+  },
+  {
+   "name": "    Pineapple Passionfruit Starbucks Refreshers® Beverage",
+   "is_new": false
+  },
+  {
+   "name": "    Pink Drink Starbucks Refreshers® Beverage",
+   "is_new": false
+  },
+  {
+   "name": "    Strawberry Açaí Starbucks Refreshers® Beverage",
+   "is_new": false
+  },
+  {
+   "name": "    Summer Skies Drink",
+   "is_new": false
+  },
+  {
+   "name": "    Summer-Berry Lemonade Refresher",
+   "is_new": false
+  },
+  {
+   "name": "    Summer-Berry Refresher",
+   "is_new": false
+  },
+  {
+   "name": "    Tropical Butterfly Energy Refresher",
+   "is_new": true
+  },
+  {
+   "name": "    Tropical Butterfly Lemonade Refresher",
+   "is_new": true
+  },
+  {
+   "name": "    Tropical Butterfly Refresher",
+   "is_new": true
+  },
+  {
+   "name": "Iced Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Banana Bread Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Double Berry Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Dubai Chocolate Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Lavender Cream Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Mango Cream Matcha",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Matcha Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Matcha Lemonade",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Nondairy Salted Caramel Cookie Matcha",
+   "is_new": false
+  },
+  {
+   "name": "Iced Energy",
+   "is_new": false
+  },
+  {
+   "name": "    Frozen Tropical Citrus Iced Energy with Strawberry Puree",
+   "is_new": false
+  },
+  {
+   "name": "    Melon Burst Iced Energy",
+   "is_new": false
+  },
+  {
+   "name": "    Tropical Citrus Iced Energy",
+   "is_new": false
+  },
+  {
+   "name": "Bottled Teas",
+   "is_new": false
+  },
+  {
+   "name": "    Brew DR. Island Mango Kombucha",
+   "is_new": false
+  },
+  {
+   "name": "    Brew DR. Superberry Kombucha",
+   "is_new": false
+  },
+  {
+   "name": "    Teavana® Mango Black Tea",
+   "is_new": false
+  },
+  {
+   "name": "    Teavana® Sparkling Unsweetened Peach Nectarine Green Tea",
+   "is_new": false
+  },
+  {
+   "name": "Iced Black Teas",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Black Tea",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Black Tea Lemonade",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Royal English Breakfast Tea Latte",
+   "is_new": false
+  },
+  {
+   "name": "Iced Chai Teas",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Apple Crisp Nondairy Cream Chai",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Chai Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Cherry Chai Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Gingerbread Chai",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Gingerbread Oatmilk Chai",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Lavender Cream Chai",
+   "is_new": false
+  },
+  {
+   "name": "    Iced London Fog Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Mango Cream Chai",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Pumpkin Cream Chai Latte",
+   "is_new": false
+  },
+  {
+   "name": "Iced Green Teas",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Green Tea",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Green Tea Lemonade",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Peach Green Tea",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Peach Green Tea Lemonade",
+   "is_new": false
+  },
+  {
+   "name": "Iced Herbal Teas",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Passion Tango® Tea",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Passion Tango® Tea Lemonade",
+   "is_new": false
+  },
+  {
+   "name": "Oleato™",
+   "is_new": false
+  },
+  {
+   "name": "    Dragon Drink® Starbucks Refreshers® Beverage with Oleato Golden Foam™",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Chai Tea Latte with Oleato Golden Foam™",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Matcha Tea Latte with Oleato Golden Foam™",
+   "is_new": false
+  },
+  {
+   "name": "    Oleato™ Caffé Latte with Oatmilk",
+   "is_new": false
+  },
+  {
+   "name": "    Oleato™ Gingerbread Oatmilk Latte",
+   "is_new": false
+  },
+  {
+   "name": "    Paradise Drink Starbucks Refreshers® Beverage with Oleato Golden Foam™",
+   "is_new": false
+  }
+ ],
+ "Frappe": [
+  {
+   "name": "Coffee Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Apple Crisp Oatmilk Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Caffè Vanilla Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Caramel Brulée Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Caramel Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Caramel Ribbon Crunch Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Chestnut Praline Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Coffee Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Espresso Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Gingerbread Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Horchata Frappuccino®",
+   "is_new": true
+  },
+  {
+   "name": "    Java Chip Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Mocha Cookie Crumble Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Mocha Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Peppermint Mocha Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Peppermint White Chocolate Mocha Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Pistachio Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Pumpkin Spice Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Sugar Cookie Almondmilk Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Toffee Nut Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    White Chocolate Mocha Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "Creme Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Apple Crisp Oatmilk Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Caramel Brulée Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Caramel Ribbon Crunch Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Chai Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Chestnut Praline Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Chocolate Cookie Crumble Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Chocolate-Covered Strawberry Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Double Chocolaty Chip Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Gingerbread Cream Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Horchata Crème Frappuccino®",
+   "is_new": true
+  },
+  {
+   "name": "    Lavender Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Matcha Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Peppermint Mocha Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Peppermint White Chocolate Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Pistachio Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Pumpkin Spice Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Strawberry Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Strawberry Shortcake Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Sugar Cookie Almondmilk Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Toffee Nut Cream Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Vanilla Bean Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    White Chocolate Crème Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "Strato Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Brown Sugar Strato™ Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Salted Caramel Mocha Strato™ Frappuccino®",
+   "is_new": false
+  },
+  {
+   "name": "    Strawberry Matcha Strato™ Frappuccino®",
+   "is_new": false
+  }
+ ],
+ "Food/Meal": [
+  {
+   "name": "Bakes &amp; Egg Bites",
+   "is_new": false
+  },
+  {
+   "name": "    Bacon &amp; Gruyère Egg Bites",
+   "is_new": false
+  },
+  {
+   "name": "    Egg White &amp; Roasted Red Pepper Egg Bites",
+   "is_new": false
+  },
+  {
+   "name": "    Italian Sausage Egg Bites",
+   "is_new": false
+  },
+  {
+   "name": "    Kale &amp; Mushroom Egg Bites",
+   "is_new": false
+  },
+  {
+   "name": "    Potato, Cheddar &amp; Chive Bakes",
+   "is_new": false
+  },
+  {
+   "name": "    Truffle, Mushroom &amp; Brie Egg Bites",
+   "is_new": false
+  },
+  {
+   "name": "Sandwiches &amp; Wraps",
+   "is_new": false
+  },
+  {
+   "name": "    Avocado Spread",
+   "is_new": false
+  },
+  {
+   "name": "    Bacon, Gouda &amp; Egg Sandwich",
+   "is_new": false
+  },
+  {
+   "name": "    Bacon, Sausage &amp; Egg Wrap",
+   "is_new": false
+  },
+  {
+   "name": "    Chicken, Maple Butter &amp; Egg Sandwich",
+   "is_new": false
+  },
+  {
+   "name": "    Chipotle Almond Dip by Bitchin’ Sauce®",
+   "is_new": false
+  },
+  {
+   "name": "    Double-Smoked Bacon, Cheddar &amp; Egg Sandwich",
+   "is_new": false
+  },
+  {
+   "name": "    Egg, Pesto &amp; Mozzarella Sandwich",
+   "is_new": false
+  },
+  {
+   "name": "    Impossible™ Breakfast Sandwich",
+   "is_new": false
+  },
+  {
+   "name": "    Sausage, Cheddar &amp; Egg Sandwich",
+   "is_new": false
+  },
+  {
+   "name": "    Spinach, Feta &amp; Egg White Wrap",
+   "is_new": false
+  },
+  {
+   "name": "    Turkey Bacon, Cheddar &amp; Egg White Sandwich",
+   "is_new": false
+  },
+  {
+   "name": "Protein Boxes",
+   "is_new": false
+  },
+  {
+   "name": "    Cheddar &amp; Uncured Salami Protein Box",
+   "is_new": false
+  },
+  {
+   "name": "    Cheese &amp; Fruit Protein Box",
+   "is_new": false
+  },
+  {
+   "name": "    Cheese Trio Protein Box",
+   "is_new": false
+  },
+  {
+   "name": "    Eggs &amp; Cheddar Protein Box",
+   "is_new": false
+  },
+  {
+   "name": "    Eggs &amp; Gouda Protein Box",
+   "is_new": false
+  },
+  {
+   "name": "    PB&amp;J Protein Box",
+   "is_new": false
+  },
+  {
+   "name": "Warm Sandwiches",
+   "is_new": false
+  },
+  {
+   "name": "    Crispy Grilled Cheese on Sourdough",
+   "is_new": false
+  },
+  {
+   "name": "    Ham &amp; Swiss on Baguette",
+   "is_new": false
+  },
+  {
+   "name": "    Jalapeño Chicken Pocket",
+   "is_new": false
+  },
+  {
+   "name": "    Spicy Falafel Pocket",
+   "is_new": false
+  },
+  {
+   "name": "    Tomato &amp; Mozzarella on Focaccia",
+   "is_new": false
+  },
+  {
+   "name": "    Turkey, Provolone &amp; Pesto on Ciabatta",
+   "is_new": false
+  },
+  {
+   "name": "Oatmeal &amp; Yogurt",
+   "is_new": false
+  },
+  {
+   "name": "    Berry Trio Parfait",
+   "is_new": false
+  },
+  {
+   "name": "    Rolled &amp; Steel-Cut Oatmeal",
+   "is_new": false
+  }
+ ],
+ "Bakery": [
+  {
+   "name": "Bagels",
+   "is_new": false
+  },
+  {
+   "name": "    Everything Bagel",
+   "is_new": false
+  },
+  {
+   "name": "    Plain Bagel",
+   "is_new": false
+  },
+  {
+   "name": "Cake Pops",
+   "is_new": false
+  },
+  {
+   "name": "    Birthday Cake Pop",
+   "is_new": false
+  },
+  {
+   "name": "    Chocolate Cake Pop",
+   "is_new": false
+  },
+  {
+   "name": "    Cookies &amp; Cream Cake Pop",
+   "is_new": false
+  },
+  {
+   "name": "    Frog Cake Pop",
+   "is_new": false
+  },
+  {
+   "name": "    Peppermint Brownie Cake Pop",
+   "is_new": false
+  },
+  {
+   "name": "    Polar Bear Cake Pop",
+   "is_new": false
+  },
+  {
+   "name": "    Snowman Cake Pop",
+   "is_new": false
+  },
+  {
+   "name": "    Unicorn Cake Pop",
+   "is_new": true
+  },
+  {
+   "name": "    Valentine Cake Pop",
+   "is_new": false
+  },
+  {
+   "name": "Cookies, Brownies &amp; Bars",
+   "is_new": false
+  },
+  {
+   "name": "    Berry Blondie",
+   "is_new": false
+  },
+  {
+   "name": "    Bullseye Cookie",
+   "is_new": false
+  },
+  {
+   "name": "    Chocolate Chip Cookie",
+   "is_new": false
+  },
+  {
+   "name": "    Cranberry Bliss® Bar",
+   "is_new": false
+  },
+  {
+   "name": "    Cranberry Bliss® Bar Tray",
+   "is_new": false
+  },
+  {
+   "name": "    Double Chocolate Brownie",
+   "is_new": false
+  },
+  {
+   "name": "    Dubai Chocolate Bite",
+   "is_new": false
+  },
+  {
+   "name": "    Penguin Cookie",
+   "is_new": false
+  },
+  {
+   "name": "    Snowman Cookie",
+   "is_new": false
+  },
+  {
+   "name": "Croissants",
+   "is_new": false
+  },
+  {
+   "name": "    Baked Apple Croissant",
+   "is_new": false
+  },
+  {
+   "name": "    Butter Croissant",
+   "is_new": false
+  },
+  {
+   "name": "    Chocolate Croissant",
+   "is_new": false
+  },
+  {
+   "name": "    Cinnamon Pull-Apart",
+   "is_new": false
+  },
+  {
+   "name": "    Cookie Croissant Swirl",
+   "is_new": false
+  },
+  {
+   "name": "    Ham &amp; Swiss Croissant",
+   "is_new": false
+  },
+  {
+   "name": "    Yuzu Citrus Blossom​",
+   "is_new": false
+  },
+  {
+   "name": "Danishes &amp; Doughnuts",
+   "is_new": false
+  },
+  {
+   "name": "    Cheese Danish",
+   "is_new": false
+  },
+  {
+   "name": "    Glazed Doughnut",
+   "is_new": false
+  },
+  {
+   "name": "    Sugar Plum Cheese Danish",
+   "is_new": false
+  },
+  {
+   "name": "    Turkey Sage Danish",
+   "is_new": false
+  },
+  {
+   "name": "    Vanilla Bean Custard Danish",
+   "is_new": false
+  },
+  {
+   "name": "Loaves, Cakes &amp; Buns",
+   "is_new": false
+  },
+  {
+   "name": "    Banana Walnut &amp; Pecan Loaf",
+   "is_new": false
+  },
+  {
+   "name": "    Chocolate Pistachio Loaf",
+   "is_new": false
+  },
+  {
+   "name": "    Cinnamon Coffee Cake",
+   "is_new": false
+  },
+  {
+   "name": "    Dark Toffee Bundt",
+   "is_new": false
+  },
+  {
+   "name": "    Gingerbread Loaf",
+   "is_new": false
+  },
+  {
+   "name": "    Iced Lemon Loaf",
+   "is_new": false
+  },
+  {
+   "name": "    Pumpkin &amp; Pepita Loaf",
+   "is_new": false
+  },
+  {
+   "name": "    Strawberry Matcha Loaf",
+   "is_new": false
+  },
+  {
+   "name": "Muffins &amp; Scones",
+   "is_new": false
+  },
+  {
+   "name": "    Blueberry Muffin",
+   "is_new": false
+  },
+  {
+   "name": "    Blueberry Scone",
+   "is_new": false
+  },
+  {
+   "name": "    Blueberry Streusel Muffin",
+   "is_new": false
+  },
+  {
+   "name": "    Petite Vanilla Bean Scone",
+   "is_new": false
+  },
+  {
+   "name": "    Pumpkin Cream Cheese Muffin",
+   "is_new": false
+  }
+ ],
+ "Snacks & Sweets": [
+  {
+   "name": "Biscotti &amp; Cookies",
+   "is_new": false
+  },
+  {
+   "name": "    Madeleines",
+   "is_new": false
+  },
+  {
+   "name": "    Marshmallow Dream Bar",
+   "is_new": false
+  },
+  {
+   "name": "    Rip van Wafels – Honey &amp; Oats",
+   "is_new": false
+  },
+  {
+   "name": "    Shortbread Cookies",
+   "is_new": false
+  },
+  {
+   "name": "    SkinnyDipped Dark Chocolate Cocoa Almonds",
+   "is_new": false
+  },
+  {
+   "name": "    SkinnyDipped Lemon Bliss Almonds",
+   "is_new": false
+  },
+  {
+   "name": "    Vanilla Biscotti with Almonds",
+   "is_new": false
+  },
+  {
+   "name": "Chocolates &amp; Candy",
+   "is_new": false
+  },
+  {
+   "name": "    Dark Chocolate Covered Espresso Beans",
+   "is_new": false
+  },
+  {
+   "name": "    Dark Chocolate Peanut Butter Cups",
+   "is_new": false
+  },
+  {
+   "name": "    Salted Almond Chocolate Bites",
+   "is_new": false
+  },
+  {
+   "name": "Fruit &amp; Nuts",
+   "is_new": false
+  },
+  {
+   "name": "    Peter Rabbit™ Organics Strawberry Banana",
+   "is_new": false
+  },
+  {
+   "name": "Meat &amp; Cheese",
+   "is_new": false
+  },
+  {
+   "name": "    Country Archer - Hickory Smoked Turkey Jerkey",
+   "is_new": false
+  },
+  {
+   "name": "    String Cheese",
+   "is_new": false
+  },
+  {
+   "name": "Popcorn &amp; Chips",
+   "is_new": false
+  },
+  {
+   "name": "    Perfectly Salted Chips",
+   "is_new": false
+  },
+  {
+   "name": "    Siete Lime Grain Free Tortilla Chips",
+   "is_new": false
+  },
+  {
+   "name": "    Siete Sea Salt Kettle Cooked Potato Chips",
+   "is_new": false
+  },
+  {
+   "name": "    Starbucks Butter Popcorn",
+   "is_new": false
+  },
+  {
+   "name": "Snack Bars",
+   "is_new": false
+  },
+  {
+   "name": "    KIND - Almond Coconut Cashew Chai",
+   "is_new": false
+  },
+  {
+   "name": "    KIND Peanut Butter Dark Chocolate Bar",
+   "is_new": false
+  },
+  {
+   "name": "    KIND® Salted Caramel &amp; Dark Chocolate Nut Bar",
+   "is_new": false
+  },
+  {
+   "name": "    Perfect Bar® - Dark Chocolate Chip Peanut Butter",
+   "is_new": false
+  },
+  {
+   "name": "    Perfect Bar® Peanut Butter",
+   "is_new": false
+  },
+  {
+   "name": "    That&#039;s It® - Apple + Blueberry Bar",
+   "is_new": false
+  },
+  {
+   "name": "    That&#039;s It® - Apple + Mango Bar",
+   "is_new": false
+  }
+ ]
+}

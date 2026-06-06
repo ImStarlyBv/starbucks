@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+
+{% block content %}
+<section class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop text-center py-16">
+  <span class="material-symbols-outlined text-primary-container" style="font-size:64px" aria-hidden="true">coffee</span>
+  <h1 class="font-display-lg text-display-lg text-primary mt-4 mb-3">Page not found</h1>
+  <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">We couldn't find that page. Try the calculator or browse the menu below.</p>
+  <div class="flex flex-wrap justify-center gap-3">
+    <a href="{{ rel }}" class="bg-primary text-white px-8 py-3 rounded-full font-label-md hover:bg-success-green transition-colors">Go home</a>
+    <a href="{{ rel }}calculator/" class="bg-white border border-primary text-primary px-8 py-3 rounded-full font-label-md hover:bg-surface-container-low transition-colors">Open calculator</a>
+  </div>
+</section>
+
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-12">
+  <h2 class="font-headline-md text-headline-md text-primary mb-6 text-center">Popular drinks</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+    {% for d in featured %}{{ ui.drink_card(d, rel) }}{% endfor %}
+  </div>
+</section>
+{% endblock %}
