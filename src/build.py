@@ -182,6 +182,11 @@ def emit_assets(dataset):
     assets = DIST / "assets"
     assets.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(SRC / "assets" / "calc.js", assets / "calc.js")
+    # Self-hosted fonts (vendored by scripts/fetch_fonts.py). app.css @font-face
+    # references assets/fonts/*.woff2; copy them through so they resolve same-origin.
+    fonts_src = SRC / "assets" / "fonts"
+    if fonts_src.is_dir():
+        shutil.copytree(fonts_src, assets / "fonts", dirs_exist_ok=True)
     (assets / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
     (assets / "og-default.svg").write_text(OG_SVG, encoding="utf-8")
     # client dataset for the standalone calculator

@@ -32,11 +32,12 @@
 <meta name="twitter:image" content="{{ page.image | default(site.url ~ '/assets/og-default.svg') }}">
 {% if page.image_alt %}<meta name="twitter:image:alt" content="{{ page.image_alt }}">{% endif %}
 
-<!-- Fonts: preconnect + display=swap (CWS: avoids render-block, limits CLS) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Source+Sans+3:wght@400;600&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap">
+<!-- Fonts are self-hosted (see scripts/fetch_fonts.py) so there's no render-blocking
+     cross-origin request. @font-face lives in app.css; we preload only the few faces
+     used above the fold so the preload scanner fetches them before app.css parses. -->
+<link rel="preload" href="{{ rel }}assets/fonts/source-sans-3-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ rel }}assets/fonts/plus-jakarta-sans-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ rel }}assets/fonts/material-symbols-outlined-400-icons.woff2" as="font" type="font/woff2" crossorigin>
 
 <link rel="stylesheet" href="{{ rel }}assets/app.css">
 <link rel="manifest" href="{{ rel }}manifest.webmanifest">
