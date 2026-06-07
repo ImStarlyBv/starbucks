@@ -61,14 +61,24 @@
           <button type="button" data-picker-cat="{{ cat.slug }}" class="picker-cat px-3 py-1.5 rounded-full border border-outline-variant bg-white text-on-surface-variant text-sm font-label-md hover:border-primary">{{ cat.title }}</button>
           {% endfor %}
         </div>
-        <ul class="bg-white rounded-2xl border border-outline-variant/40 max-h-[28rem] overflow-auto divide-y divide-outline-variant/30" data-picker-list>
+        {# Mobile: 2-col card grid (photo on top, name below). Desktop (lg): the narrow
+           sidebar reverts to a single-column list (small thumb left, name beside it).
+           One set of <li> keeps data-name/data-cat/data-slug intact for the JS filter. #}
+        <ul class="grid grid-cols-2 gap-3 p-1 overflow-auto max-h-[32rem]
+                   lg:flex lg:flex-col lg:gap-0 lg:p-0 lg:max-h-[28rem]
+                   lg:bg-white lg:rounded-2xl lg:border lg:border-outline-variant/40 lg:divide-y lg:divide-outline-variant/30"
+            data-picker-list>
           {% for d in all_drinks %}
           <li data-name="{{ d.name|lower }}" data-cat="{{ d.category }}">
             <a href="{{ rel }}drink/{{ d.slug }}/" data-slug="{{ d.slug }}"
-               class="flex items-center gap-3 px-4 py-2.5 hover:bg-surface-container-low transition-colors">
-              {% if d.image %}<img src="{{ rel }}{{ d.image }}" alt="" width="600" height="600" loading="lazy" decoding="async" class="w-9 h-9 rounded-lg object-cover shrink-0">{% endif %}
-              <span class="text-sm text-on-surface flex-1 min-w-0 truncate">{{ d.name }}</span>
-              <span class="text-caption text-outline whitespace-nowrap">{{ d.base[d.default_size].calories }} kcal</span>
+               class="group flex flex-col h-full rounded-xl border border-outline-variant/40 bg-white overflow-hidden transition-all hover:border-primary hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-primary
+                      lg:flex-row lg:items-center lg:gap-3 lg:h-auto lg:rounded-none lg:border-0 lg:overflow-visible lg:px-4 lg:py-2.5 lg:hover:shadow-none lg:hover:bg-surface-container-low">
+              <div class="relative aspect-square bg-surface-container-low lg:aspect-auto lg:w-9 lg:h-9 lg:shrink-0 lg:bg-transparent">
+                {% if d.image %}<img src="{{ rel }}{{ d.image }}" alt="" width="600" height="600" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 lg:rounded-lg lg:group-hover:scale-100">{% endif %}
+                <span class="absolute top-1.5 right-1.5 bg-white/95 text-primary-container px-2 py-0.5 rounded-full text-caption font-semibold shadow-sm lg:hidden">{{ d.base[d.default_size].calories }} kcal</span>
+              </div>
+              <span class="block px-2.5 py-2 text-sm text-on-surface font-medium leading-snug line-clamp-2 lg:flex-1 lg:min-w-0 lg:px-0 lg:py-0">{{ d.name }}</span>
+              <span class="hidden lg:inline text-caption text-outline whitespace-nowrap">{{ d.base[d.default_size].calories }} kcal</span>
             </a>
           </li>
           {% endfor %}
